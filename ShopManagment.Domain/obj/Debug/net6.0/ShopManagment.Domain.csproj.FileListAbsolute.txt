@@ -1,0 +1,17 @@
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\bin\Debug\net6.0\ShopManagment.Domain.deps.json
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\bin\Debug\net6.0\ShopManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\bin\Debug\net6.0\ShopManagment.Domain.pdb
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\bin\Debug\net6.0\0_FrameWork.dll
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\bin\Debug\net6.0\0_FrameWork.pdb
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.csproj.AssemblyReference.cache
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.AssemblyInfoInputs.cache
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.AssemblyInfo.cs
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.csproj.CoreCompileInputs.cache
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.csproj.CopyComplete
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\refint\ShopManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.pdb
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ref\ShopManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\bin\Debug\net6.0\ShopManagment.Application.Contracts.dll
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\bin\Debug\net6.0\ShopManagment.Application.Contracts.pdb

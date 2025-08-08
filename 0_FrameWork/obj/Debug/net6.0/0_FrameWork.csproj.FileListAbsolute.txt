@@ -1,0 +1,12 @@
+D:\Project\C#\Lamp_Project\0_FrameWork\bin\Debug\net6.0\0_FrameWork.deps.json
+D:\Project\C#\Lamp_Project\0_FrameWork\bin\Debug\net6.0\0_FrameWork.dll
+D:\Project\C#\Lamp_Project\0_FrameWork\bin\Debug\net6.0\0_FrameWork.pdb
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\0_FrameWork.csproj.AssemblyReference.cache
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\0_FrameWork.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\0_FrameWork.AssemblyInfoInputs.cache
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\0_FrameWork.AssemblyInfo.cs
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\0_FrameWork.csproj.CoreCompileInputs.cache
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\0_FrameWork.dll
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\refint\0_FrameWork.dll
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\0_FrameWork.pdb
+D:\Project\C#\Lamp_Project\0_FrameWork\obj\Debug\net6.0\ref\0_FrameWork.dll

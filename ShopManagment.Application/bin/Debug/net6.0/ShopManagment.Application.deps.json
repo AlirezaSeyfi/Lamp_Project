@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ShopManagment.Application/1.0.0": {
+        "dependencies": {
+          "ShopManagment.Application.Contracts": "1.0.0",
+          "ShopManagment.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagment.Application.dll": {}
+        }
+      },
+      "0_FrameWork/1.0.0": {
+        "runtime": {
+          "0_FrameWork.dll": {}
+        }
+      },
+      "ShopManagment.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "0_FrameWork": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagment.Application.Contracts.dll": {}
+        }
+      },
+      "ShopManagment.Domain/1.0.0": {
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "ShopManagment.Application.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagment.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ShopManagment.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "0_FrameWork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopManagment.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopManagment.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

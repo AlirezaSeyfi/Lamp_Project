@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "0_FrameWork/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/0_FrameWork.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/0_FrameWork.dll": {}
+        }
+      },
+      "ShopManagment.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_FrameWork": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagment.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagment.Application.Contracts.dll": {}
+        }
+      },
+      "ShopManagment.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "ShopManagment.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagment.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagment.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "0_FrameWork/1.0.0": {
+      "type": "project",
+      "path": "../0_FrameWork/0_FrameWork.csproj",
+      "msbuildProject": "../0_FrameWork/0_FrameWork.csproj"
+    },
+    "ShopManagment.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagment.Application.Contracts/ShopManagment.Application.Contracts.csproj",
+      "msbuildProject": "../ShopManagment.Application.Contracts/ShopManagment.Application.Contracts.csproj"
+    },
+    "ShopManagment.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagment.Domain/ShopManagment.Domain.csproj",
+      "msbuildProject": "../ShopManagment.Domain/ShopManagment.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "ShopManagment.Application.Contracts >= 1.0.0",
+      "ShopManagment.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Person\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\ShopManagment.Application.csproj",
+      "projectName": "ShopManagment.Application",
+      "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\ShopManagment.Application.csproj",
+      "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+      "outputPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj": {
+              "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj"
+            },
+            "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
+              "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

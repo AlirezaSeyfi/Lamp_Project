@@ -11,19 +11,6 @@
         "runtime": {
           "bin/placeholder/0_FrameWork.dll": {}
         }
-      },
-      "ShopManagment.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "0_FrameWork": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ShopManagment.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ShopManagment.Domain.dll": {}
-        }
       }
     }
   },
@@ -32,16 +19,11 @@
       "type": "project",
       "path": "../0_FrameWork/0_FrameWork.csproj",
       "msbuildProject": "../0_FrameWork/0_FrameWork.csproj"
-    },
-    "ShopManagment.Domain/1.0.0": {
-      "type": "project",
-      "path": "../ShopManagment.Domain/ShopManagment.Domain.csproj",
-      "msbuildProject": "../ShopManagment.Domain/ShopManagment.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ShopManagment.Domain >= 1.0.0"
+      "0_FrameWork >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -71,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
-              "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj"
+            "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+              "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
             }
           }
         }
