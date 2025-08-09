@@ -6,6 +6,7 @@
         public string Description { get; set; }
         public string Picture { get; set; }
         public string PictureAlt { get; set; }
+        public string PictureTitle { get; set; }
         public string Title { get; set; }
         public string KeyWord { get; set; }
         public string MetaDescription { get; set; }

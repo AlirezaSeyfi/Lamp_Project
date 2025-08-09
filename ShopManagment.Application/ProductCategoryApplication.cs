@@ -17,7 +17,7 @@ namespace ShopManagment.Application
         {
             var operation = new OperationResult();
 
-            if (_productCategoryRepository.Exist(x => x.Name == command.Name))
+            if (_productCategoryRepository.Exists(x => x.Name == command.Name))
                 return operation.Failed("امکان ثبت رکورد تکراری وجود ندارد");
 
             var slug = Slugify.GenerateSlug(command.Slug);
@@ -36,7 +36,7 @@ namespace ShopManagment.Application
             if (productCategory == null)
                 return operation.Failed("رکورد با اطلاعات درخواست شده یافت نشد");
 
-            if (_productCategoryRepository.Exist(x => x.Name == command.Name && x.Id != command.Id))
+            if (_productCategoryRepository.Exists(x => x.Name == command.Name && x.Id != command.Id))
                 return operation.Failed("امکان ثبت رکورد تکراری وجود ندارد");
 
             var slug = Slugify.GenerateSlug(command.Slug);
@@ -49,11 +49,39 @@ namespace ShopManagment.Application
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
         {
             return _productCategoryRepository.Search(searchModel);
+
+            #region Code
+            //var query = _productCategoryRepository.GetAll();
+            //return query
+            //    .Where(x => string.IsNullOrEmpty(searchModel.Name) || x.Name.Contains(searchModel.Name))
+            //    .Select(x => new ProductCategoryViewModel
+            //    {
+            //        Id = x.Id,
+            //        Name = x.Name,
+            //    }).ToList();
+            #endregion
+
         }
 
         public EditProductCategory GetDetails(long id)
         {
             return _productCategoryRepository.GetDetails(id);
+
+            #region Code
+            //var productCategory = _productCategoryRepository.Get(id);
+            //return new EditProductCategory
+            //{
+            //    Id = productCategory.Id,
+            //    Name = productCategory.Name,
+            //    Description = productCategory.Description,
+            //    Picture = productCategory.Picture,
+            //    PictureAlt = productCategory.PictureAlt,
+            //    Title = productCategory.PictureTitle,
+            //    MetaDescription = productCategory.MetaDescription,
+            //    KeyWord = productCategory.KeyWord,
+            //    Slug = productCategory.Slug
+            //};
+            #endregion
         }
     }
 }
