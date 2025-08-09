@@ -1,0 +1,5 @@
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\netcoreapp1.1\ServiceHost.csproj.AssemblyReference.cache
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\netcoreapp1.1\ServiceHost.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\netcoreapp1.1\ServiceHost.AssemblyInfoInputs.cache
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\netcoreapp1.1\ServiceHost.AssemblyInfo.cs
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\netcoreapp1.1\ServiceHost.csproj.CoreCompileInputs.cache
