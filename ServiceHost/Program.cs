@@ -1,7 +1,14 @@
+using ShopManagement.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+
+var connectionString = builder.Configuration.GetConnectionString("LampProjectDB");
+ShopManagementBootstrapper.Configure(builder.Services, connectionString);
+
 
 var app = builder.Build();
 
