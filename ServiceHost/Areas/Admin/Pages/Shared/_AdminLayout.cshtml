@@ -193,7 +193,7 @@
     <!-- Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Alpine Js Start-->
+    <!-- Alpine Js-->
     <script defer src="~/admin_temp/js/alpine.js"></script>
     <script>
         document.addEventListener('alpine:init', () => {
@@ -213,12 +213,12 @@
                 }))
         })
     </script>
-    <!-- Alpine Js End-->
-    <!-- Pre Counter Start-->
+
+    <!-- Pre Counter-->
     <script src="~/admin_temp/js/purecounter_vanilla.js"></script>
     <script>new PureCounter();</script>
-    <!-- Pre Counter End-->
-    <!-- Chart 1 Chart.js Start -->
+
+    <!-- Chart 1 Chart.js -->
     <script src="~/admin_temp/js/chart.js"></script>
     <script>
         const chartType = window.innerWidth < 576 ? 'bar' : 'line';
@@ -263,8 +263,8 @@
         }
 
     </script>
-    <!-- Chart.js End-->
-    <!-- Chart 2 Chart.js Start-->
+
+    <!-- Chart 2 Chart.js-->
     <script>
         const dataValues = [10, 90]; // موفق ، ناموفق
         const labels = ['پرداخت موفق', 'پرداخت ناموفق'];
@@ -326,8 +326,9 @@
             }
         });
     </script>
-    <!-- Chart 2 End-->
 
+
+    @RenderSection("Scripts", false)
 </body>
 
 </html>
