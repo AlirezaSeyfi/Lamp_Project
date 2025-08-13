@@ -8,6 +8,6 @@ namespace _0_FrameWork.Domain
         List<T> GetAll();
         void Create(T entity);
         bool Exists(Expression<Func<T, bool>> expression);
-        void SaveChanges();
+        void SaveChange();
     }
 }

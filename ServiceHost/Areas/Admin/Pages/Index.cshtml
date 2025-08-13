@@ -1,7 +1,7 @@
 ﻿@page
 @model ServiceHost.Areas.Admin.Pages.IndexModel
 @{
-    ViewData["Title"]    = "داشبورد";
+    ViewData["Title"] = "داشبورد";
 }
 <!-- Content -->
 <div class="col-xl-9">
@@ -304,3 +304,114 @@
     </div>
 
 </div>
+
+@section Scripts {
+    <!-- Chart 1 Chart.js -->
+    <script src="~/admin_temp/js/chart.js"></script>
+    <script>
+        const chartType = window.innerWidth < 576 ? 'bar' : 'line';
+
+        const data = {
+            labels: ['روز ۱', 'روز ۲', 'روز ۳', 'روز ۴', 'روز ۵', 'روز ۶'],
+            datasets: [{
+                label: 'میان داده‌ها',
+                data: [10, 25, 13, 6, 5, 150],
+                borderColor: 'rgba(255,0,0,1)',
+                backgroundColor: 'rgba(255,0,0,0.5)',
+                pointStyle: 'circle',
+                pointRadius: 8,
+                pointHoverRadius: 12
+            }]
+        };
+
+        const config = {
+            type: chartType,
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: (ctx) => 'شکل نقطه: ' + ctx.chart.data.datasets[0].pointStyle
+                    }
+                }
+            }
+        };
+
+        // Create Chart
+        const myChart = new Chart(
+            document.getElementById('ChartJs'),
+            config
+        );
+
+        // Set Style Chart
+        function setStyle(style) {
+            myChart.data.datasets.forEach(ds => ds.pointStyle = style);
+            myChart.update();
+        }
+
+    </script>
+
+    <!-- Chart 2 Chart.js-->
+    <script>
+        const dataValues = [10, 90]; // موفق ، ناموفق
+        const labels = ['پرداخت موفق', 'پرداخت ناموفق'];
+        const colors = ['#0984e3', '#c0392b'];
+
+        const ctx = document.getElementById('chart2');
+
+        const paymentChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: dataValues,
+                    backgroundColor: colors,
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                weight: 'bold', // بولد کردن فونت
+                                family: 'Vazir' // فونت سفارشی (مثلاً Vazir، جایگزین کنید با فونت خودتون)
+                            },
+                            generateLabels: function(chart) {
+                                const dataset = chart.data.datasets[0];
+                                const total = dataset.data.reduce((a, b) => a + b, 0);
+
+                                return chart.data.labels.map((label, i) => {
+                                    const value = dataset.data[i];
+                                    const percent = ((value / total) * 100).toFixed(1) + '%';
+                                    return {
+                                        text: `${label} (${percent})`,
+                                        fillStyle: dataset.backgroundColor[i],
+                                        strokeStyle: dataset.backgroundColor[i],
+                                        fontColor: '#6B7280', // رنگ خاکستری برای متن
+                                        hidden: isNaN(dataset.data[i]) || chart.getDatasetMeta(0).data[i].hidden,
+                                        index: i
+                                    };
+                                });
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let value = context.parsed;
+                                let total = context.chart._metasets[0].total;
+                                let percent = ((value / total) * 100).toFixed(1);
+                                return `${context.label}: ${value} (${percent}%)`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+}

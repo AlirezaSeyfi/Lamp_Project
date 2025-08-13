@@ -15,21 +15,58 @@ namespace ShopManagment.Application
 
         public OperationResult Create(CreateProductCategory command)
         {
+            string fileName = null;
+
+            if (command.Picture != null && command.Picture.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+                Directory.CreateDirectory(uploadsFolder); // اطمینان از وجود پوشه
+
+                fileName = Guid.NewGuid() + Path.GetExtension(command.Picture.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    command.Picture.CopyTo(stream);
+                }
+            }
+
             var operation = new OperationResult();
 
             if (_productCategoryRepository.Exists(x => x.Name == command.Name))
                 return operation.Failed("امکان ثبت رکورد تکراری وجود ندارد");
 
             var slug = Slugify.GenerateSlug(command.Slug);
-            var productCategory = new ProductCategory(command.Name, command.Description, command.Picture, command.PictureAlt, command.Title, command.KeyWord, command.MetaDescription, slug);
+            var productCategory = new ProductCategory(command.Name, command.Description, fileName, command.PictureAlt, command.PictureTitle, command.KeyWord, command.MetaDescription, slug);
             _productCategoryRepository.Create(productCategory);
-            _productCategoryRepository.SaveChanges();
+            _productCategoryRepository.SaveChange();
 
             return operation.Succedded();
         }
 
         public OperationResult Edit(EditProductCategory command)
         {
+
+            string fileName = null;
+
+            if (command.Picture != null && command.Picture.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+                Directory.CreateDirectory(uploadsFolder); // اطمینان از وجود پوشه
+
+                fileName = Guid.NewGuid() + Path.GetExtension(command.Picture.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    command.Picture.CopyTo(stream);
+                }
+            }
+            else
+            {
+                fileName = command.ExistingPicturePath;
+            }
+
             var operation = new OperationResult();
 
             var productCategory = _productCategoryRepository.Get(command.Id);
@@ -40,8 +77,8 @@ namespace ShopManagment.Application
                 return operation.Failed("امکان ثبت رکورد تکراری وجود ندارد");
 
             var slug = Slugify.GenerateSlug(command.Slug);
-            productCategory.Edit(command.Name, command.Description, command.Picture, command.PictureAlt, command.Title, command.KeyWord, command.MetaDescription, slug); ;
-            _productCategoryRepository.SaveChanges();
+            productCategory.Edit(command.Name, command.Description, fileName, command.PictureAlt, command.PictureTitle, command.KeyWord, command.MetaDescription, slug); ;
+            _productCategoryRepository.SaveChange();
 
             return operation.Succedded();
         }

@@ -14,7 +14,7 @@
     <section x-data="toggleSidebar">
 
         <!-- Side Bar-->
-        <section x-cloak class="sidebar bg-white" :class="open || 'inactive'">
+        <section x-cloak class="sidebar bg-white" :class="open || 'inactive'" x-data="sidebar" x-init="init()">
 
             <!-- Icon And Name-->
             <div class="d-flex align-items-center justify-content-around justify-content-lg-center">
@@ -27,18 +27,10 @@
                 <ul class="list-unstyled">
 
                     <!-- item -->
-                    <li class="sidebar-item active">
-                        <a href="index.html" class="sidebar-link">
-                            <i class="bi bi-speedometer2 ms-2"></i>
-                            <span>داشبورد</span>
-                        </a>
-                    </li>
-
-                    <!-- item -->
                     <li class="sidebar-item">
-                        <a href="index.html" class="sidebar-link">
-                            <i class="bi bi-basket2 ms-2"></i>
-                            <span>فروشگاه</span>
+                        <a asp-page="/index" class="sidebar-link">
+                            <i class="bi bi-speedometer2 ms-2"></i>
+                            <span class="fs-8">داشبورد</span>
                         </a>
                     </li>
 
@@ -47,53 +39,18 @@
 
                         <div @@click="toggle" class="sidebar-link">
                             <i class="bi bi-basket2 ms-2"></i>
-                            <span>تست</span>
+                            <span class="fs-8">محصولات</span>
                             <i class="bi bi-chevron-down me-auto"></i>
                         </div>
 
                         <ul x-show="open" x-transition class="submenu list-unstyled">
                             <li class="submenu-item">
-                                <a href="#">تست 1</a>
+                                <a asp-page="Shop/ProductCategories/index" class="fs-8">لیست</a>
                             </li>
-                            <li class="submenu-item">
-                                <a href="#">تست 2</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a href="#">تست 3</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a href="#">تست 4</a>
-                            </li>
+
                         </ul>
 
                     </li>
-
-                    <!-- item -->
-                    <li class="sidebar-item" x-data="dropdown">
-
-                        <div @@click="toggle" class="sidebar-link">
-                            <i class="bi bi-basket2 ms-2"></i>
-                            <span>تست</span>
-                            <i class="bi bi-chevron-down me-auto"></i>
-                        </div>
-
-                        <ul x-show="open" x-transition class="submenu list-unstyled">
-                            <li class="submenu-item">
-                                <a href="#">تست 1</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a href="#">تست 2</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a href="#">تست 3</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a href="#">تست 4</a>
-                            </li>
-                        </ul>
-
-                    </li>
-
                 </ul>
             </div>
 
@@ -218,115 +175,65 @@
     <script src="~/admin_temp/js/purecounter_vanilla.js"></script>
     <script>new PureCounter();</script>
 
-    <!-- Chart 1 Chart.js -->
-    <script src="~/admin_temp/js/chart.js"></script>
+    <!--Sidebar Active Class-->
     <script>
-        const chartType = window.innerWidth < 576 ? 'bar' : 'line';
+        document.addEventListener("alpine:init", () => {
 
-        const data = {
-            labels: ['روز ۱', 'روز ۲', 'روز ۳', 'روز ۴', 'روز ۵', 'روز ۶'],
-            datasets: [{
-                label: 'میان داده‌ها',
-                data: [10, 25, 13, 6, 5, 150],
-                borderColor: 'rgba(255,0,0,1)',
-                backgroundColor: 'rgba(255,0,0,0.5)',
-                pointStyle: 'circle',
-                pointRadius: 8,
-                pointHoverRadius: 12
-            }]
-        };
+            Alpine.data("sidebar", () => ({
+                open: true,
+                toggleSidebar() { this.open = !this.open; },
 
-        const config = {
-            type: chartType,
-            data: data,
-            options: {
-                responsive: true,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: (ctx) => 'شکل نقطه: ' + ctx.chart.data.datasets[0].pointStyle
-                    }
-                }
-            }
-        };
+                init() {
+                    const currentPath = window.location.pathname.toLowerCase();
 
-        // Create Chart
-        const myChart = new Chart(
-            document.getElementById('ChartJs'),
-            config
-        );
+                    document.querySelectorAll(".sidebar-item, .submenu-item").forEach((li) => {
+                        const link = li.querySelector("a");
+                        if (!link) return;
 
-        // Set Style Chart
-        function setStyle(style) {
-            myChart.data.datasets.forEach(ds => ds.pointStyle = style);
-            myChart.update();
-        }
+                        const href = link.getAttribute("href").toLowerCase();
 
-    </script>
+                        if (currentPath.endsWith(href)) {
+                            const parentDropdown = li.closest('[x-data="dropdown"]');
 
-    <!-- Chart 2 Chart.js-->
-    <script>
-        const dataValues = [10, 90]; // موفق ، ناموفق
-        const labels = ['پرداخت موفق', 'پرداخت ناموفق'];
-        const colors = ['#0984e3', '#c0392b'];
+                            if (parentDropdown) {
+                                // کلاس active روی والد dropdown
+                                parentDropdown.classList.add("active");
 
-        const ctx = document.getElementById('chart2');
+                                // **باز کردن زیرمنو**
+                                if (parentDropdown.__x) {
+                                    parentDropdown.__x.$data.open = true;
+                                }
 
-        const paymentChart = new Chart(ctx, {
-            type: 'pie',
-            data: {
-                labels: labels,
-                datasets: [{
-                    data: dataValues,
-                    backgroundColor: colors,
-                    borderColor: '#fff',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                        labels: {
-                            font: {
-                                weight: 'bold', // بولد کردن فونت
-                                family: 'Vazir' // فونت سفارشی (مثلاً Vazir، جایگزین کنید با فونت خودتون)
-                            },
-                            generateLabels: function(chart) {
-                                const dataset = chart.data.datasets[0];
-                                const total = dataset.data.reduce((a, b) => a + b, 0);
+                                li.classList.add("active");
+                                link.classList.add("active");
+                            } else {
+                                li.classList.add("active");
+                                link.classList.add("active");
+                            }
+                        } else {
+                            li.classList.remove("active");
+                            link.classList.remove("active");
 
-                                return chart.data.labels.map((label, i) => {
-                                    const value = dataset.data[i];
-                                    const percent = ((value / total) * 100).toFixed(1) + '%';
-                                    return {
-                                        text: `${label} (${percent})`,
-                                        fillStyle: dataset.backgroundColor[i],
-                                        strokeStyle: dataset.backgroundColor[i],
-                                        fontColor: '#6B7280', // رنگ خاکستری برای متن
-                                        hidden: isNaN(dataset.data[i]) || chart.getDatasetMeta(0).data[i].hidden,
-                                        index: i
-                                    };
-                                });
+                            const parentDropdown = li.closest('[x-data="dropdown"]');
+                            if (parentDropdown) parentDropdown.classList.remove("active");
+
+                            if (parentDropdown && parentDropdown.__x) {
+                                parentDropdown.__x.$data.open = false;
                             }
                         }
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                let value = context.parsed;
-                                let total = context.chart._metasets[0].total;
-                                let percent = ((value / total) * 100).toFixed(1);
-                                return `${context.label}: ${value} (${percent}%)`;
-                            }
-                        }
-                    }
+                    });
                 }
-            }
+            }));
+
+            Alpine.data("dropdown", () => ({
+                open: false,
+                toggle() { this.open = !this.open; }
+            }));
+
         });
-    </script>
 
+
+    </script>
 
     @RenderSection("Scripts", false)
 </body>

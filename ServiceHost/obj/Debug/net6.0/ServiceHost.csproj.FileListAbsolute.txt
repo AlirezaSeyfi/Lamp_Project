@@ -261,3 +261,8 @@ D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAn
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\scopedcss\Areas\Admin\Pages\Shared\_AdminLayout.cshtml.rz.scp.css
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.ObjectPool.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
