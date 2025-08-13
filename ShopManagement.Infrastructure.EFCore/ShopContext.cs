@@ -1,12 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore.Mapping;
+using ShopManagment.Domain.ProductAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Infrastructure.EFCore
 {
     public class ShopContext : DbContext
     {
-        public DbSet<ProductCategory> productCategories { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Product> Products { get; set; }
         public ShopContext(DbContextOptions<ShopContext> options) : base(options)
         {
 
