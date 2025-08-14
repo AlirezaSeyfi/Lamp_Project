@@ -10,8 +10,9 @@ D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.D
 D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.AssemblyInfoInputs.cache
 D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.AssemblyInfo.cs
 D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.csproj.CoreCompileInputs.cache
-D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.csproj.CopyComplete
 D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.dll
 D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\refint\ShopManagment.Domain.dll
 D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.pdb
 D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ref\ShopManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopManagment.Domain.sourcelink.json
+D:\Project\C#\Lamp_Project\ShopManagment.Domain\obj\Debug\net6.0\ShopMana.3B6D73ED.Up2Date

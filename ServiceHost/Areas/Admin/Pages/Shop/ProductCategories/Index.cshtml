@@ -1,7 +1,7 @@
 ﻿@page
 @model ServiceHost.Areas.Admin.Pages.Shop.ProductCategories.IndexModel
 @{
-    ViewData["Title"] = "مدیریت محصولات";
+    ViewData["Title"] = "مدیریت دسته بندی محصولات";
 }
 
 <div class="col-12">
@@ -15,7 +15,7 @@
             </button>
 
             <a href="#" id="openModalLink" class="btn btn-primary fs-8">
-                ایجاد محصول
+                ایجاد دسته بندی محصولات
                 <i class="bi bi-plus"></i>
             </a>
 
@@ -30,7 +30,7 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">عکس</th>
-                            <th scope="col">نام محصول</th>
+                            <th scope="col">نام دسته بندی</th>
                             <th scope="col">تاریخ ثبت</th>
                             <th scope="col">تعداد</th>
                             <th scope="col">عملیات</th>
@@ -38,7 +38,7 @@
                     </thead>
                     <tbody>
 
-                        @foreach (var item in Model.products)
+                        @foreach (var item in Model.productCategories)
                         {
                             <tr>
                                 <th scope="row">@item.Id</th>
@@ -110,19 +110,11 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label" asp-for="SearchModel.Name">
                             نام
-                            محصول
+                            دسته بندی محصول
                         </label>
                         <input type="text" class="form-control" asp-for="SearchModel.Name"
                                aria-describedby="emailHelp">
                     </div>
-
-                    @* <div class="mb-3">
-                    <label class="form-label">وضعیت</label>
-                    <select class="form-select" aria-label="Default select example">
-                    <option value="0" selected>تایید شده</option>
-                    <option value="1">تایید نشده</option>
-                    </select>
-                    </div>*@
 
                 </div>
                 <div class="modal-footer">
@@ -137,8 +129,6 @@
 
 <!-- Modal Create -->
 <div id="modalContainer"></div>
-
-
 
 @section Scripts{
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>

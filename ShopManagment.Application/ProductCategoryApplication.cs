@@ -34,7 +34,7 @@ namespace ShopManagment.Application
             var operation = new OperationResult();
 
             if (_productCategoryRepository.Exists(x => x.Name == command.Name))
-                return operation.Failed(َApplicationMessages.RecordNotFound);
+                return operation.Failed(ApplicationMessages.RecordNotFound);
 
             var slug = Slugify.GenerateSlug(command.Slug);
             var productCategory = new ProductCategory(command.Name, command.Description, fileName, command.PictureAlt, command.PictureTitle, command.KeyWord, command.MetaDescription, slug);
@@ -119,6 +119,11 @@ namespace ShopManagment.Application
             //    Slug = productCategory.Slug
             //};
             #endregion
+        }
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+            return _productCategoryRepository.GetProductCategories();
         }
     }
 }

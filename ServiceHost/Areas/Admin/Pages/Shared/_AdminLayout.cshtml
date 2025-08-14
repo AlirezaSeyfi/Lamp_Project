@@ -44,8 +44,13 @@
                         </div>
 
                         <ul x-show="open" x-transition class="submenu list-unstyled">
+
                             <li class="submenu-item">
-                                <a asp-page="Shop/ProductCategories/index" class="fs-8">لیست</a>
+                                <a asp-page="/Shop/ProductCategories/index" class="fs-8">لیست دسته بندی</a>
+                            </li>
+
+                            <li class="submenu-item">
+                                <a asp-page="/Shop/Product/index" class="fs-8">لیست محصولات</a>
                             </li>
 
                         </ul>
@@ -177,9 +182,22 @@
 
     <!--Sidebar Active Class-->
     <script>
-        document.addEventListener("alpine:init", () => {
+        document.addEventListener('alpine:init', () => {
 
-            Alpine.data("sidebar", () => ({
+            // مدیریت باز/بسته شدن سایدبار
+            Alpine.data('toggleSidebar', () => ({
+                open: window.innerWidth <= 992 ? false : true,
+                toggle() { this.open = !this.open }
+            }));
+
+            // مدیریت dropdown ها
+            Alpine.data('dropdown', () => ({
+                open: false,
+                toggle() { this.open = !this.open }
+            }));
+
+            // مدیریت فعال‌سازی لینک‌ها و باز کردن منوها
+            Alpine.data('sidebar', () => ({
                 open: true,
                 toggleSidebar() { this.open = !this.open; },
 
@@ -193,47 +211,30 @@
                         const href = link.getAttribute("href").toLowerCase();
 
                         if (currentPath.endsWith(href)) {
-                            const parentDropdown = li.closest('[x-data="dropdown"]');
-
-                            if (parentDropdown) {
-                                // کلاس active روی والد dropdown
+                            // باز کردن تمام والدهای dropdown تا ریشه
+                            let parentDropdown = li.closest('[x-data="dropdown"]');
+                            while (parentDropdown) {
                                 parentDropdown.classList.add("active");
-
-                                // **باز کردن زیرمنو**
                                 if (parentDropdown.__x) {
                                     parentDropdown.__x.$data.open = true;
                                 }
-
-                                li.classList.add("active");
-                                link.classList.add("active");
-                            } else {
-                                li.classList.add("active");
-                                link.classList.add("active");
+                                parentDropdown = parentDropdown.parentElement.closest('[x-data="dropdown"]');
                             }
+
+                            li.classList.add("active");
+                            link.classList.add("active");
+
                         } else {
                             li.classList.remove("active");
                             link.classList.remove("active");
-
-                            const parentDropdown = li.closest('[x-data="dropdown"]');
-                            if (parentDropdown) parentDropdown.classList.remove("active");
-
-                            if (parentDropdown && parentDropdown.__x) {
-                                parentDropdown.__x.$data.open = false;
-                            }
                         }
                     });
                 }
             }));
 
-            Alpine.data("dropdown", () => ({
-                open: false,
-                toggle() { this.open = !this.open; }
-            }));
-
         });
-
-
     </script>
+
 
     @RenderSection("Scripts", false)
 </body>

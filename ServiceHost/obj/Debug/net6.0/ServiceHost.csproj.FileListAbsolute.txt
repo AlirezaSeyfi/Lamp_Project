@@ -78,7 +78,6 @@ D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagement.Infrastru
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagment.Application.pdb
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagment.Application.Contracts.pdb
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagment.Domain.pdb
-D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.csproj.CopyComplete
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\Humanizer.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\MessagePack.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\MessagePack.Annotations.dll
@@ -266,3 +265,13 @@ D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.Dep
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.ObjectPool.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ServiceHost.staticwebassets.endpoints.json
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\rpswa.dswa.cache.json
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.sourcelink.json
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\rjimswa.dswa.cache.json
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\rjsmrazor.dswa.cache.json
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\rjsmcshtml.dswa.cache.json
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\staticwebassets.build.json.cache
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceH.EB565EEF.Up2Date

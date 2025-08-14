@@ -7,7 +7,7 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.ProductCategories
     public class IndexModel : PageModel
     {
         public ProductCategorySearchModel SearchModel;
-        public List<ProductCategoryViewModel> products;
+        public List<ProductCategoryViewModel> productCategories;
         private readonly IProductCategoryApplication _productCategoryApplication;
 
         public IndexModel(IProductCategoryApplication productCategoryApplication)
@@ -17,7 +17,7 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.ProductCategories
 
         public void OnGet(ProductCategorySearchModel searchModel)
         {
-            products = _productCategoryApplication.Search(searchModel);
+            productCategories = _productCategoryApplication.Search(searchModel);
         }
 
         public IActionResult OnGetCreate()

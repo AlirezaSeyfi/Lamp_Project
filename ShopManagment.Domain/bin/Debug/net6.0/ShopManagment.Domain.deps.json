@@ -244,7 +244,10 @@
           "Microsoft.EntityFrameworkCore": "6.0.36"
         },
         "runtime": {
-          "0_FrameWork.dll": {}
+          "0_FrameWork.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ShopManagment.Application.Contracts/1.0.0": {
@@ -253,7 +256,10 @@
           "Microsoft.AspNetCore.Http": "2.3.0"
         },
         "runtime": {
-          "ShopManagment.Application.Contracts.dll": {}
+          "ShopManagment.Application.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
