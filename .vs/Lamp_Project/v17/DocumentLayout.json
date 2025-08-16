@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Project\\C#\\Lamp_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|d:\\project\\c#\\lamp_project\\shopmanagment.application\\slideapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|solutionrelative:shopmanagment.application\\slideapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Migrations\\20250816163835_Create_Slide_Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopManagement.Infrastructure.EFCore\\Migrations\\20250816163835_Create_Slide_Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SlideApplication.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\SlideApplication.cs",
-              "RelativeDocumentMoniker": "ShopManagment.Application\\SlideApplication.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\SlideApplication.cs*",
-              "RelativeToolTip": "ShopManagment.Application\\SlideApplication.cs*",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAACEAAACIAAAAAAAAAA==",
+              "Title": "20250816163835_Create_Slide_Table.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Migrations\\20250816163835_Create_Slide_Table.cs",
+              "RelativeDocumentMoniker": "ShopManagement.Infrastructure.EFCore\\Migrations\\20250816163835_Create_Slide_Table.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Migrations\\20250816163835_Create_Slide_Table.cs",
+              "RelativeToolTip": "ShopManagement.Infrastructure.EFCore\\Migrations\\20250816163835_Create_Slide_Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T15:19:05.105Z",
+              "WhenOpened": "2025-08-16T16:38:35.97Z",
               "EditorCaption": ""
             }
           ]

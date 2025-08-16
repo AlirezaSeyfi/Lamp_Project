@@ -2,13 +2,13 @@
 {
     public class CreateSlide
     {
-        public string Picture { get; private set; }
-        public string PictureAlt { get; private set; }
-        public string PictureTitle { get; private set; }
-        public string Heading { get; private set; }
-        public string Title { get; private set; }
-        public string Text { get; private set; }
-        public string BtnText { get; private set; }
+        public string Picture { get; set; }
+        public string PictureAlt { get; set; }
+        public string PictureTitle { get; set; }
+        public string Heading { get; set; }
+        public string Title { get; set; }
+        public string Text { get;  set; }
+        public string BtnText { get;  set; }
     }
 
 }
