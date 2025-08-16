@@ -2,6 +2,7 @@
 using ShopManagement.Infrastructure.EFCore.Mapping;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
+using ShopManagment.Domain.ProductPictureAgg;
 
 namespace ShopManagement.Infrastructure.EFCore
 {
@@ -9,6 +10,8 @@ namespace ShopManagement.Infrastructure.EFCore
     {
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductPicture> ProductPictures { get; set; }
+
         public ShopContext(DbContextOptions<ShopContext> options) : base(options)
         {
 

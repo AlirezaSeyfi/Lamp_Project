@@ -1,5 +1,5 @@
-﻿@using ShopManagment.Application.Contracts.ProductCategory
-@model CreateProductCategory
+﻿@using ShopManagment.Application.Contracts.Product
+@model CreateProduct
 @{
 
 }
@@ -29,9 +29,28 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="Slug" class="control-label">اسلاگ</label>
-                                <input type="text" class="form-control" asp-for="Slug">
-                                <span asp-validation-for="Slug" class="text-danger fs-8"></span>
+                                <label asp-for="Code" class="control-label">کد</label>
+                                <input type="text" class="form-control" asp-for="Code">
+                                <span asp-validation-for="Code" class="text-danger fs-8"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="UnitPrice" class="control-label">قیمت واحد</label>
+                                <input type="text" class="form-control" asp-for="UnitPrice">
+                                <span asp-validation-for="UnitPrice" class="text-danger fs-8"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="CategoryId" class="control-label">گروه محصول</label>
+                                <select type="text" class="form-control fs-8" asp-for="CategoryId" asp-items='new SelectList(Model.Categories, "Id", "Name")'>
+                                    <option value="0" selected>گروه محصول ...</option>
+                                </select>
+                                <span asp-validation-for="CategoryId" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -63,9 +82,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group no-margin">
-                                <label asp-for="Description" class="control-label">توضیحات</label>
-                                <textarea class="form-control autogrow" asp-for="Description"
-                                          onchange="fillField('Description', 'MetaDescription')"
+                                <label asp-for="ShortDescription" class="control-label">توضیحات کوتاه</label>
+                                <textarea class="form-control autogrow" asp-for="ShortDescription"
+                                          onchange="fillField('ShortDescription', 'MetaDescription')"
                                           style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                             </div>
                         </div>
@@ -73,10 +92,26 @@
 
                     <div class="row">
                         <div class="col-md-12">
+                            <div class="form-group no-margin">
+                                <label asp-for="Description" class="control-label">توضیحات</label>
+                                <textarea class="form-control autogrow" asp-for="Description" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="KeyWord" class="control-label">کلمه کلیدی</label>
-                                <input type="text" class="form-control" asp-for="KeyWord">
-                                <span asp-validation-for="KeyWord" class="text-danger fs-8"></span>
+                                <label asp-for="KeyWords" class="control-label">کلمه کلیدی</label>
+                                <input type="text" class="form-control" asp-for="KeyWords">
+                                <span asp-validation-for="KeyWords" class="text-danger fs-8"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Slug" class="control-label">اسلاگ</label>
+                                <input type="text" class="form-control" asp-for="Slug">
+                                <span asp-validation-for="Slug" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -95,7 +130,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default waves-effect" data-bs-dismiss="modal"
-                                aria-label="Close">
+                            aria-label="Close">
                         بستن
                     </button>
                     <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد</button>

@@ -381,6 +381,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.3.0",
           "Microsoft.EntityFrameworkCore": "6.0.36"
         },
         "compile": {

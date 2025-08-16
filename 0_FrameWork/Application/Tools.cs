@@ -109,5 +109,10 @@ namespace _0_FrameWork.Application
         {
             return $"{date.Year:0000}-{date.Month:00}-{date.Day:00}-{date.Hour:00}-{date.Minute:00}-{date.Second:00}";
         }
+
+        public static string ToPriceFormat(double value)
+        {
+            return value.ToString("#,##0.##");
+        }
     }
 }

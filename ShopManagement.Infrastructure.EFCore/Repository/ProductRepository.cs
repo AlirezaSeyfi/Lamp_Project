@@ -1,4 +1,5 @@
-﻿using _0_FrameWork.Infrastructure;
+﻿using _0_FrameWork.Application;
+using _0_FrameWork.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagment.Application.Contracts.Product;
 using ShopManagment.Domain.ProductAgg;
@@ -28,7 +29,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     Description = x.Description,
                     KeyWords = x.KeyWords,
                     MetaDescription = x.MetaDescription,
-                    Picture = x.Picture,
+                    ExistingPicturePath = x.Picture,
                     PictureAlt = x.PictureAlt,
                     PictureTitle = x.PictureTitle,
                     ShortDescription = x.ShortDescription,
@@ -37,6 +38,19 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 .SingleOrDefault();
         }
 
+        public List<ProductViewModel> GetProducts()
+        {
+            return _context.Products.Select(x => new ProductViewModel()
+            {
+                Id = x.Id,
+                Name = x.Name
+            }).ToList();
+        }
+
+        public Product GetProductWithCategory(long id)
+        {
+            return _context.Products.Include(x => x.Category).FirstOrDefault(x => x.Id == id);
+        }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
         {
@@ -47,8 +61,10 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Category = x.Category.Name,
                 CategoryId = x.Category.Id,
                 Code = x.Code,
+                InStock = x.IsStock,
                 Picture = x.Picture,
                 UnitPrice = x.UnitPrice,
+                CreationDate = x.CreationDate.ToFarsi()
             });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))

@@ -15,12 +15,28 @@ namespace ShopManagment.Application
 
         public OperationResult Create(CreateProduct command)
         {
+            string fileName = null;
+
+            if (command.Picture != null && command.Picture.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+                Directory.CreateDirectory(uploadsFolder); // اطمینان از وجود پوشه
+
+                fileName = Guid.NewGuid() + Path.GetExtension(command.Picture.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    command.Picture.CopyTo(stream);
+                }
+            }
+
             var operationResult = new OperationResult();
             if (_productRepository.Exists(x => x.Name == command.Name))
                 return operationResult.Failed(ApplicationMessages.DuplicatedRecord);
 
             var slug = Slugify.GenerateSlug(command.Slug);
-            var product = new Product(command.Name, command.Code, command.UnitPrice, command.ShortDescription, command.Description, command.Picture, command.PictureAlt, command.PictureTitle, command.CategoryId, slug, command.KeyWords, command.MetaDescription);
+            var product = new Product(command.Name, command.Code, command.UnitPrice, command.ShortDescription, command.Description, fileName, command.PictureAlt, command.PictureTitle,command.CategoryId, slug, command.KeyWords, command.MetaDescription);
             _productRepository.Create(product);
             _productRepository.SaveChange();
             return operationResult.Succedded();
@@ -29,6 +45,26 @@ namespace ShopManagment.Application
 
         public OperationResult Edit(EditProduct command)
         {
+            string fileName = null;
+
+            if (command.Picture != null && command.Picture.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+                Directory.CreateDirectory(uploadsFolder); // اطمینان از وجود پوشه
+
+                fileName = Guid.NewGuid() + Path.GetExtension(command.Picture.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    command.Picture.CopyTo(stream);
+                }
+            }
+            else
+            {
+                fileName = command.ExistingPicturePath;
+            }
+
             var operationResult = new OperationResult();
             var product = _productRepository.Get(command.Id);
 
@@ -39,8 +75,9 @@ namespace ShopManagment.Application
                 return operationResult.Failed(ApplicationMessages.DuplicatedRecord);
 
             var slug = Slugify.GenerateSlug(command.Slug);
-            product.Edit(command.Name, command.Code, command.UnitPrice, command.ShortDescription, command.Description, command.Picture, command.PictureAlt, command.PictureTitle, command.CategoryId, slug, command.KeyWords, command.MetaDescription);
+            product.Edit(command.Name, command.Code, command.UnitPrice, command.ShortDescription, command.Description, fileName, command.PictureAlt, command.PictureTitle, command.CategoryId, slug, command.KeyWords, command.MetaDescription);
             _productRepository.SaveChange();
+
             return operationResult.Succedded();
         }
 

@@ -1,7 +1,24 @@
 ﻿@page
+@using _0_FrameWork.Application
 @model ServiceHost.Areas.Admin.Pages.Shop.Product.IndexModel
 @{
     ViewData["Title"] = "مدیریت محصولات";
+}
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 110">
+        <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bi bi-envelope mx-2 text-primary fs-5 d-grid fw-bold"></i>
+                <i class="bi bi-x-octagon me-auto fs-5 d-grid fw-bold text-danger" data-bs-dismiss="toast" aria-label="Close"></i>
+            </div>
+            <div class="toast-body">
+                @Model.Message
+            </div>
+        </div>
+    </div>
 }
 
 <div class="col-12">
@@ -34,6 +51,7 @@
                             <th scope="col">کد</th>
                             <th scope="col">گروه</th>
                             <th scope="col">قیمت</th>
+                            <th scope="col">موجودی</th>
                             <th scope="col">تاریخ ثبت</th>
                             <th scope="col">تعداد</th>
                             <th scope="col">عملیات</th>
@@ -49,23 +67,55 @@
                                 <td>@item.Name</td>
                                 <td>@item.Code</td>
                                 <td>@item.Category</td>
-                                <td>@item.UnitPrice</td>
+                                <td>@Tools.ToPriceFormat(@item.UnitPrice)</td>
+                                <td>
+                                    @if (item.InStock)
+                                    {
+                                        <div class="d-block text-center">
+                                            <i class="bi bi-check2 fs-4 text-success fw-bold"></i>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="d-block text-center">
+                                            <i class="bi bi-x fs-4 text-danger fw-bold"></i>
+                                        </div>
+                                    }
+                                </td>
                                 <td>@item.CreationDate</td>
                                 <td>12</td>
                                 <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                            عملیات
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">نمایش</a></li>
-                                            <li>
-                                                <a class="dropdown-item openModalLinkEdit" href="#" data-id="@item.Id">ویرایش</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">حذف</a></li>
-                                        </ul>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                عملیات
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">نمایش</a></li>
+                                                <li>
+                                                    <a class="dropdown-item openModalLinkEdit" href="#" data-id="@item.Id">ویرایش</a>
+                                                </li>
+
+                                                <li><a class="dropdown-item" href="#">حذف</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            @if (item.InStock)
+                                            {
+                                                <div>
+                                                    <a class="btn btn-outline-danger fs-8" asp-page="index" asp-page-handler="NotInStock" asp-route-id="@item.Id">اتمام موجودی</a>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div>
+                                                    <a class="btn btn-outline-success fs-8" asp-page="index" asp-page-handler="IsInStock" asp-route-id="@item.Id">موجود شد</a>
+                                                </div>
+                                            }
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
@@ -113,14 +163,14 @@
                 </div>
                 <div class="modal-body">
 
-                    <div class="mb-3">
+                    <divdiv class="mb-3">
                         <label for="exampleInputEmail1" class="form-label" asp-for="SearchModel.Name">
                             نام
                             محصول
                         </label>
                         <input type="text" class="form-control" asp-for="SearchModel.Name"
                                aria-describedby="emailHelp">
-                    </div>
+                    </divdiv>
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label" asp-for="SearchModel.Code">
@@ -151,9 +201,13 @@
 <!-- Modal Create -->
 <div id="modalContainer"></div>
 
-
-
 @section Scripts {
+    <script>
+        var toastEl = document.getElementById('myToast')
+        var toast = new bootstrap.Toast(toastEl)
+        toast.show()
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="~/Admin_temp/js/site.js"></script>
     <script>

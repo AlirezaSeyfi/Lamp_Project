@@ -82,7 +82,7 @@ body {
     }
 
     .sidebar.inactive {
-        margin-right: -250px;
+        margin-right: -250px !important;
     }
 
     .sidebar .sidebar-item {
@@ -213,7 +213,7 @@ body {
     /* Table */
     .content .card .table.product tbody td {
         color: #636e72;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
         .content .card .table.product tbody td .dropdown button {

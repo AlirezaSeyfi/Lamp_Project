@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="~/admin_temp/css/main.css">
 </head>
 <body>
-
     <!-- Main Section -->
-    <section x-data="toggleSidebar">
+    <section x-data="sidebarState">
 
         <!-- Side Bar-->
-        <section x-cloak class="sidebar bg-white" :class="open || 'inactive'" x-data="sidebar" x-init="init()">
+        <section x-cloak class="sidebar bg-white" :class="open || 'inactive'" x-init="init()">
 
             <!-- Icon And Name-->
             <div class="d-flex align-items-center justify-content-around justify-content-lg-center">
@@ -158,22 +157,36 @@
     <!-- Alpine Js-->
     <script defer src="~/admin_temp/js/alpine.js"></script>
     <script>
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('toggleSidebar', () => ({
-                open: window.innerWidth <= 992 ? false : true,
-
-                toggle() {
-                    this.open = !this.open
+               document.addEventListener('alpine:init', () => {
+            Alpine.data('sidebarState', () => ({
+                open: window.innerWidth > 992,
+                toggle() { this.open = !this.open },
+                init() {
+                    const currentPath = window.location.pathname.toLowerCase();
+                    document.querySelectorAll(".sidebar-item, .submenu-item").forEach((li) => {
+                        const link = li.querySelector("a");
+                        if (!link) return;
+                        const href = link.getAttribute("href").toLowerCase();
+                        if (currentPath.endsWith(href)) {
+                            let parentDropdown = li.closest('[x-data="dropdown"]');
+                            while (parentDropdown) {
+                                parentDropdown.classList.add("active");
+                                if (parentDropdown.__x) parentDropdown.__x.$data.open = true;
+                                parentDropdown = parentDropdown.parentElement.closest('[x-data="dropdown"]');
+                            }
+                            li.classList.add("active");
+                            link.classList.add("active");
+                        }
+                    });
                 }
-            })),
-                Alpine.data('dropdown', () => ({
-                    open: false,
+            }));
 
-                    toggle() {
-                        this.open = !this.open
-                    }
-                }))
-        })
+            Alpine.data('dropdown', () => ({
+                open: false,
+                toggle() { this.open = !this.open }
+            }));
+        });
+
     </script>
 
     <!-- Pre Counter-->

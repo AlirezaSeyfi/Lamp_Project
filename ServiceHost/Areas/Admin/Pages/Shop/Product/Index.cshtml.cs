@@ -8,6 +8,8 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.Product
 {
     public class IndexModel : PageModel
     {
+        [TempData]
+        public string Message { get; set; }
         public ProductSearchModel SearchModel;
         public List<ProductViewModel> products;
         public SelectList ProductCategories;
@@ -22,13 +24,15 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.Product
 
         public void OnGet(ProductSearchModel searchModel)
         {
-            ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories(),"Id","Name");
+            ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories(), "Id", "Name");
             products = _productApplication.Search(searchModel);
         }
 
         public IActionResult OnGetCreate()
         {
-            return Partial("Create", new CreateProduct());
+            var command = new CreateProduct();
+            command.Categories = _productCategoryApplication.GetProductCategories();
+            return Partial("Create", command);
         }
 
         public JsonResult OnPostCreate(CreateProduct command)
@@ -39,15 +43,36 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.Product
 
         public IActionResult OnGetEdit(long id)
         {
-            var productCategory = _productApplication.GetDetails(id);
+            var product = _productApplication.GetDetails(id);
+            product.Categories = _productCategoryApplication.GetProductCategories();
 
-            return Partial("Edit", productCategory);
+            return Partial("Edit", product);
         }
 
         public JsonResult OnPostEdit(EditProduct command)
         {
             var result = _productApplication.Edit(command);
             return new JsonResult(result);
+        }
+
+        public IActionResult OnGetNotInStock(long id)
+        {
+            var result = _productApplication.NotInStock(id);
+            if (result.IsSuccedded)
+                return RedirectToPage(new { area = "Admin" });
+
+            Message = result.Message;
+            return RedirectToPage(new { area = "Admin" });
+        }
+
+        public IActionResult OnGetIsInStock(long id)
+        {
+            var result = _productApplication.InStock(id);
+            if (result.IsSuccedded)
+                return RedirectToPage(new { area = "Admin" });
+
+            Message = result.Message;
+            return RedirectToPage(new { area = "Admin" });
         }
     }
 }
