@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\Project\\C#\\Lamp_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5FB842F-97B1-4F9D-B223-2A5C55FAC087}|ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj|d:\\project\\c#\\lamp_project\\shopmanagment.application.contracts\\productpicture\\productpicturesearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5FB842F-97B1-4F9D-B223-2A5C55FAC087}|ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj|solutionrelative:shopmanagment.application.contracts\\productpicture\\productpicturesearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E209F37-A4EA-429C-BDDB-ABEA5A0959A5}|ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj|d:\\project\\c#\\lamp_project\\shopmanagement.infrastructure.efcore\\repository\\productpicturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E209F37-A4EA-429C-BDDB-ABEA5A0959A5}|ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj|solutionrelative:shopmanagement.infrastructure.efcore\\repository\\productpicturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|d:\\project\\c#\\lamp_project\\shopmanagment.application\\productpictureapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|solutionrelative:shopmanagment.application\\productpictureapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|d:\\project\\c#\\lamp_project\\shopmanagment.application\\slideapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|solutionrelative:shopmanagment.application\\slideapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductPictureSearchModel.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ProductPicture\\ProductPictureSearchModel.cs",
-              "RelativeDocumentMoniker": "ShopManagment.Application.Contracts\\ProductPicture\\ProductPictureSearchModel.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ProductPicture\\ProductPictureSearchModel.cs",
-              "RelativeToolTip": "ShopManagment.Application.Contracts\\ProductPicture\\ProductPictureSearchModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T05:34:36.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductPictureRepository.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Repository\\ProductPictureRepository.cs",
-              "RelativeDocumentMoniker": "ShopManagement.Infrastructure.EFCore\\Repository\\ProductPictureRepository.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Repository\\ProductPictureRepository.cs",
-              "RelativeToolTip": "ShopManagement.Infrastructure.EFCore\\Repository\\ProductPictureRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwCAAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T05:16:46.263Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductPictureApplication.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\ProductPictureApplication.cs",
-              "RelativeDocumentMoniker": "ShopManagment.Application\\ProductPictureApplication.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\ProductPictureApplication.cs",
-              "RelativeToolTip": "ShopManagment.Application\\ProductPictureApplication.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFAAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SlideApplication.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\SlideApplication.cs",
+              "RelativeDocumentMoniker": "ShopManagment.Application\\SlideApplication.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\SlideApplication.cs*",
+              "RelativeToolTip": "ShopManagment.Application\\SlideApplication.cs*",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwDcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T04:54:40.964Z",
+              "WhenOpened": "2025-08-16T15:19:05.105Z",
               "EditorCaption": ""
             }
           ]

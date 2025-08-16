@@ -1,6 +1,7 @@
 ﻿using _0_FrameWork.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagment.Application.Contracts.ProductPicture;
+using ShopManagment.Domain.IProductPictureRepository;
 using ShopManagment.Domain.ProductPictureAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
@@ -21,13 +22,14 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                ProductId = x.ProductId
+                ProductId = x.ProductId,
+                ExistingPicturePath=x.Picture
             }).FirstOrDefault(x => x.Id == id);
         }
 
         public ProductPicture GetWithProductAndCategory(long id)
         {
-            throw new NotImplementedException();
+            return _context.ProductPictures.FirstOrDefault(x=>x.Id==id);
         }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)

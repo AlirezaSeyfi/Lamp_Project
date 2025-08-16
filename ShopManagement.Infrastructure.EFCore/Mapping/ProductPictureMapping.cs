@@ -16,6 +16,7 @@ namespace ShopManagement.Infrastructure.EFCore.Mapping
             builder.ToTable("ProductPictures");
             builder.HasKey(x => x.Id);
 
+            builder.Property(x => x.ProductName).HasMaxLength(255).IsRequired();
             builder.Property(x => x.Picture).HasMaxLength(1000).IsRequired();
             builder.Property(x => x.PictureAlt).HasMaxLength(500).IsRequired();
             builder.Property(x => x.PictureTitle).HasMaxLength(500).IsRequired();

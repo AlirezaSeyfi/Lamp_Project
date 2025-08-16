@@ -72,6 +72,8 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\ProductPictures\برای-تست\محصول-تست\2025-08-16-10-50-05-Lucid_Origin_Create_a_highresolution_3D_logo_that_says_P_Craft_1.jpg
+wwwroot\ProductPictures\لوستر-آزمایشی\چراغ-خواب-سیلیکونی-مدل-خرگوش-خوابیده\2025-08-16-10-41-16-Untitled design (3).png
 wwwroot\uploads\1.jpg
 wwwroot\uploads\15.png
 wwwroot\uploads\27c6f699-8872-4431-9fdf-bd4b50535467.jpg

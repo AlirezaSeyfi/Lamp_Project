@@ -5,24 +5,25 @@ namespace ShopManagment.Domain.ProductPictureAgg
 {
     public class ProductPicture : EntityBase
     {
-        public long PictureId { get; private set; }
+        public string ProductName { get; private set; }
         public string Picture { get; private set; }
         public string PictureAlt { get; private set; }
         public string PictureTitle { get; private set; }
         public bool IsRemoved { get; private set; }
         public long ProductId { get; set; }
         public Product Product{ get; set; }
-        public ProductPicture(long pictureId, string picture, string pictureAlt, string pictureTitle)
+        public ProductPicture(string productName, long productId, string picture, string pictureAlt, string pictureTitle)
         {
-            PictureId = pictureId;
+            ProductName = productName;
+            ProductId = productId;
             Picture = picture;
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             IsRemoved = false;
         }
-        public void Edit(long pictureId, string picture, string pictureAlt, string pictureTitle)
+        public void Edit(string productName, long productId, string picture, string pictureAlt, string pictureTitle)
         {
-            PictureId = pictureId;
+            ProductId = productId;
             Picture = picture;
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;

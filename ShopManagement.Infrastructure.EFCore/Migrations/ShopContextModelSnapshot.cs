@@ -178,9 +178,6 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<long>("PictureId")
-                        .HasColumnType("bigint");
-
                     b.Property<string>("PictureTitle")
                         .IsRequired()
                         .HasMaxLength(500)
@@ -188,6 +185,11 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
 
                     b.Property<long>("ProductId")
                         .HasColumnType("bigint");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id");
 

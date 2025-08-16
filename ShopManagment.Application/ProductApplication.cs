@@ -86,6 +86,11 @@ namespace ShopManagment.Application
             return _productRepository.GetDetail(id);
         }
 
+        public List<ProductViewModel> GetProducts()
+        {
+            return _productRepository.GetProducts();
+        }
+
         public OperationResult InStock(long id)
         {
             var operationResult = new OperationResult();

@@ -1,5 +1,6 @@
 ﻿using _0_FrameWork.Application;
 using ShopManagment.Application.Contracts.ProductPicture;
+using ShopManagment.Domain.IProductPictureRepository;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagment.Domain.ProductPictureAgg;
 
@@ -26,7 +27,7 @@ namespace ShopManagment.Application
             var path = $"{product.Category.Slug}//{product.Slug}";
             var picturePath = _fileUploader.Upload(command.Picture, path);
 
-            var productPicture = new ProductPicture(command.ProductId, picturePath, command.PictureAlt, command.PictureTitle);
+            var productPicture = new ProductPicture(product.Name, command.ProductId, picturePath, command.PictureAlt, command.PictureTitle);
             _productPictureRepository.Create(productPicture);
             _productPictureRepository.SaveChange();
             return operationResult.Succedded();
@@ -35,14 +36,24 @@ namespace ShopManagment.Application
         public OperationResult Edit(EditProductPicture command)
         {
             var operation = new OperationResult();
+            var product = _productRepository.GetDetail(command.ProductId);
             var productPicture = _productPictureRepository.GetWithProductAndCategory(command.Id);
             if (productPicture == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            var path = $"{productPicture.Product.Category.Slug}//{productPicture.Product.Slug}";
-            var picturePath = _fileUploader.Upload(command.Picture, path);
+            string fileName = null;
 
-            productPicture.Edit(command.ProductId, picturePath, command.PictureAlt, command.PictureTitle);
+            if (command.Picture != null && command.Picture.Length > 0)
+            {
+                var path = $"{productPicture.Product.Category.Slug}//{productPicture.Product.Slug}";
+                var picturePath = _fileUploader.Upload(command.Picture, path);
+            }
+            else
+            {
+                fileName = command.ExistingPicturePath;
+            }
+
+            productPicture.Edit(product.Name, command.ProductId, fileName, command.PictureAlt, command.PictureTitle);
             _productPictureRepository.SaveChange();
             return operation.Succedded();
         }

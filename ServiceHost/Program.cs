@@ -1,3 +1,5 @@
+using _0_FrameWork.Application;
+using ServiceHost;
 using ShopManagement.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,7 @@ builder.Services.AddRazorPages();
 
 var connectionString = builder.Configuration.GetConnectionString("LampProjectDB");
 ShopManagementBootstrapper.Configure(builder.Services, connectionString);
+builder.Services.AddTransient<IFileUploader, FileUploader>();
 
 
 var app = builder.Build();

@@ -1,5 +1,4 @@
 ﻿using _0_FrameWork.Application;
-using ShopManagment.Application.Contracts.ProductCategory;
 
 namespace ShopManagment.Application.Contracts.ProductPicture
 {
