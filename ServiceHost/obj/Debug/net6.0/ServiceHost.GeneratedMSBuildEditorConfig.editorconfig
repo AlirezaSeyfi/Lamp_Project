@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Shared/_Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hhcmVkXF9NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +66,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Shop/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hvcFxQcm9kdWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Shop/Slides/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hvcFxTbGlkZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Shop/Slides/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hvcFxTbGlkZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Shop/Slides/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hvcFxTbGlkZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/_ViewImports.cshtml]

@@ -1,0 +1,183 @@
+﻿@page
+@using _0_FrameWork.Application
+@model ServiceHost.Areas.Admin.Pages.Shop.Slides.IndexModel
+@{
+    ViewData["Title"] = "مدیریت اسلاید ها";
+}
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 110">
+        <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bi bi-envelope mx-2 text-primary fs-5 d-grid fw-bold"></i>
+                <i class="bi bi-x-octagon me-auto fs-5 d-grid fw-bold text-danger" data-bs-dismiss="toast" aria-label="Close"></i>
+            </div>
+            <div class="toast-body">
+                @Model.Message
+            </div>
+        </div>
+    </div>
+}
+
+<div class="col-12">
+    <div class="card">
+
+        <div class="card-header text-start d-flex justify-content-between">
+            <a href="#" id="openModalLink" class="btn btn-primary fs-8">
+                ایجاد اسلاید جدید
+                <i class="bi bi-plus"></i>
+            </a>
+        </div>
+
+        <div class="card-body">
+            <!-- Table -->
+            <div class="table-responsive border border-1 rounded p-2">
+                <table class="table product table-rounded m-0 align-middle" id="PTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">عکس</th>
+                            <th scope="col">سر تیتر</th>
+                            <th scope="col">عنوان</th>
+                            <th scope="col">وضعیت</th>
+                            <th scope="col">تاریخ ثبت</th>
+                            <th scope="col">عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.Slides)
+                        {
+                            <tr>
+                                <th scope="row">@item.Id</th>
+                                <td><img src="~/ProductPictures/@item.Picture" alt="" class="" width="50"></td>
+                                <td>@item.Heading</td>
+                                <td>@item.Title</td>
+                                <td>
+                                    @if (item.IsRemoved)
+                                    {
+                                        <div class="d-block text-center">
+                                            <i class="bi bi-x fs-4 text-danger fw-bold"></i>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="d-block text-center">
+                                            <i class="bi bi-check2 fs-4 text-success fw-bold"></i>
+                                        </div>
+                                    }
+                                </td>
+                                <td>@item.CreationDate</td>
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                عملیات
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">نمایش</a></li>
+                                                <li>
+                                                    <a class="dropdown-item openModalLinkEdit" href="#" data-id="@item.Id">ویرایش</a>
+                                                </li>
+
+                                                <li><a class="dropdown-item" href="#">حذف</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            @if (item.IsRemoved)
+                                            {
+                                                <div>
+                                                    <a class="btn btn-outline-success fs-8" asp-page="index" asp-page-handler="Restore" asp-route-id="@item.Id">موجود شد</a>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div>
+                                                    <a class="btn btn-outline-danger fs-8" asp-page="index" asp-page-handler="Remove" asp-route-id="@item.Id">اتمام موجودی</a>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- pagination -->
+            <div class="d-flex justify-content-center mt-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination my-2">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item ">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Create -->
+<div id="modalContainer"></div>
+
+@section Scripts {
+    <script>
+        var toastEl = document.getElementById('myToast')
+        var toast = new bootstrap.Toast(toastEl)
+        toast.show()
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="~/Admin_temp/js/site.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#openModalLink").click(function(e) {
+                e.preventDefault();
+
+                $.get("/Admin/Shop/Slides?handler=Create", function(data) {
+                    $("#modalContainer").html(data);
+
+                    //For validate Form Create
+                    var form = $("#modalContainer").find("form");
+                    $.validator.unobtrusive.parse(form);
+
+                    var modal = new bootstrap.Modal(document.getElementById('create'));
+                    modal.show();
+                });
+            });
+
+            $(".openModalLinkEdit").click(function(e) {
+                e.preventDefault();
+
+                var idToEdit = $(this).data("id");
+                $.get("/Admin/Shop/Slides?handler=Edit&id=" + idToEdit, function(data) {
+                    $("#modalContainer").html(data);
+                    var modal = new bootstrap.Modal(document.getElementById('edit'));
+                    modal.show();
+                });
+            });
+
+        });
+    </script>
+    <partial name="_ValidationScriptsPartial" />
+}
+
+

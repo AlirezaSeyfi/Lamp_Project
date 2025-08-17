@@ -44,10 +44,10 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.ProductPicture
 
         public IActionResult OnGetEdit(long id)
         {
-            var product = _productPictureApplication.GetDetails(id);
-            product.Products = _productApplication.GetProducts();
+            var productPicture = _productPictureApplication.GetDetails(id);
+            productPicture.Products = _productApplication.GetProducts();
 
-            return Partial("Edit", product);
+            return Partial("Edit", productPicture);
         }
 
         public JsonResult OnPostEdit(EditProductPicture command)
@@ -56,7 +56,7 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.ProductPicture
             return new JsonResult(result);
         }
 
-        public IActionResult OnGetRemoved(long id)
+        public IActionResult OnGetRemove(long id)
         {
             var result = _productPictureApplication.Remove(id);
             if (result.IsSuccedded)

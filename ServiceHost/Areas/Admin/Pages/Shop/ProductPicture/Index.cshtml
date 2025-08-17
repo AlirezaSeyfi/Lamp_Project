@@ -98,13 +98,13 @@
                                             @if (item.IsRemoved)
                                             {
                                                 <div>
-                                                    <a class="btn btn-outline-danger fs-8" asp-page="index" asp-page-handler="NotInStock" asp-route-id="@item.Id">اتمام موجودی</a>
+                                                    <a class="btn btn-outline-success fs-8" asp-page="index" asp-page-handler="Restore" asp-route-id="@item.Id">موجود شد</a>
                                                 </div>
                                             }
                                             else
                                             {
                                                 <div>
-                                                    <a class="btn btn-outline-success fs-8" asp-page="index" asp-page-handler="IsInStock" asp-route-id="@item.Id">موجود شد</a>
+                                                    <a class="btn btn-outline-danger fs-8" asp-page="index" asp-page-handler="Remove" asp-route-id="@item.Id">اتمام موجودی</a>
                                                 </div>
                                             }
                                         </div>
