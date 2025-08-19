@@ -7,36 +7,25 @@ namespace ShopManagment.Application
     public class ProductApplication : IProductApplication
     {
         private readonly IProductRepository _productRepository;
+        private readonly IFileUploader _fileUploader;
 
-        public ProductApplication(IProductRepository productRepository)
+        public ProductApplication(IProductRepository productRepository, IFileUploader fileUploader)
         {
             _productRepository = productRepository;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateProduct command)
         {
-            string fileName = null;
-
-            if (command.Picture != null && command.Picture.Length > 0)
-            {
-                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
-                Directory.CreateDirectory(uploadsFolder); // اطمینان از وجود پوشه
-
-                fileName = Guid.NewGuid() + Path.GetExtension(command.Picture.FileName);
-                var filePath = Path.Combine(uploadsFolder, fileName);
-
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    command.Picture.CopyTo(stream);
-                }
-            }
+            var slug = Slugify.GenerateSlug(command.Slug);
+            var path = $"Product/{slug}";
+            var picturePath = _fileUploader.Upload(command.Picture, path);
 
             var operationResult = new OperationResult();
             if (_productRepository.Exists(x => x.Name == command.Name))
                 return operationResult.Failed(ApplicationMessages.DuplicatedRecord);
 
-            var slug = Slugify.GenerateSlug(command.Slug);
-            var product = new Product(command.Name, command.Code, command.UnitPrice, command.ShortDescription, command.Description, fileName, command.PictureAlt, command.PictureTitle,command.CategoryId, slug, command.KeyWords, command.MetaDescription);
+            var product = new Product(command.Name, command.Code, command.UnitPrice, command.ShortDescription, command.Description, picturePath, command.PictureAlt, command.PictureTitle,command.CategoryId, slug, command.KeyWords, command.MetaDescription);
             _productRepository.Create(product);
             _productRepository.SaveChange();
             return operationResult.Succedded();

@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "D:\\Project\\C#\\Lamp_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E209F37-A4EA-429C-BDDB-ABEA5A0959A5}|ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj|d:\\project\\c#\\lamp_project\\shopmanagement.infrastructure.efcore\\repository\\sliderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E209F37-A4EA-429C-BDDB-ABEA5A0959A5}|ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj|solutionrelative:shopmanagement.infrastructure.efcore\\repository\\sliderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|d:\\project\\c#\\lamp_project\\shopmanagment.application\\slideapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|solutionrelative:shopmanagment.application\\slideapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\shop\\slides\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\shop\\slides\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\shop\\slides\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\shop\\slides\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\shop\\slides\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\shop\\slides\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\shop\\slides\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\shop\\slides\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|d:\\project\\c#\\lamp_project\\shopmanagment.application\\productcategoryapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|solutionrelative:shopmanagment.application\\productcategoryapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,94 +14,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Index.cshtml.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Index.cshtml.cs",
-              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Index.cshtml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAiwCkAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ProductCategoryApplication.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\ProductCategoryApplication.cs",
+              "RelativeDocumentMoniker": "ShopManagment.Application\\ProductCategoryApplication.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\ProductCategoryApplication.cs",
+              "RelativeToolTip": "ShopManagment.Application\\ProductCategoryApplication.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAEwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T07:41:53.109Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Index.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Index.cshtml",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Index.cshtml",
-              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Index.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAnwDYAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-17T07:41:41.509Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Create.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Create.cshtml",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Create.cshtml",
-              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-17T07:45:32.263Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Edit.cshtml",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Edit.cshtml",
-              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\Slides\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-17T11:14:22.771Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SlideApplication.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\SlideApplication.cs",
-              "RelativeDocumentMoniker": "ShopManagment.Application\\SlideApplication.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\SlideApplication.cs",
-              "RelativeToolTip": "ShopManagment.Application\\SlideApplication.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAD4vzoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T10:53:58.888Z",
+              "WhenOpened": "2025-08-19T11:37:00.063Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SlideRepository.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Repository\\SlideRepository.cs",
-              "RelativeDocumentMoniker": "ShopManagement.Infrastructure.EFCore\\Repository\\SlideRepository.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Repository\\SlideRepository.cs*",
-              "RelativeToolTip": "ShopManagement.Infrastructure.EFCore\\Repository\\SlideRepository.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAWwCcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T11:29:41.208Z",
-              "EditorCaption": ""
             }
           ]
         }

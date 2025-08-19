@@ -7,37 +7,26 @@ namespace ShopManagment.Application
     public class ProductCategoryApplication : IProductCategoryApplication
     {
         private readonly IProductCategoryRepository _productCategoryRepository;
+        private readonly IFileUploader _fileUploader;
 
-        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository)
+        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository, IFileUploader fileUploader)
         {
             _productCategoryRepository = productCategoryRepository;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateProductCategory command)
         {
-            string fileName = null;
-
-            if (command.Picture != null && command.Picture.Length > 0)
-            {
-                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
-                Directory.CreateDirectory(uploadsFolder); // اطمینان از وجود پوشه
-
-                fileName = Guid.NewGuid() + Path.GetExtension(command.Picture.FileName);
-                var filePath = Path.Combine(uploadsFolder, fileName);
-
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    command.Picture.CopyTo(stream);
-                }
-            }
+            var slug = Slugify.GenerateSlug(command.Slug);
+            var path = $"ProductCategory/{slug}";
+            var picturePath = _fileUploader.Upload(command.Picture, path);
 
             var operation = new OperationResult();
 
             if (_productCategoryRepository.Exists(x => x.Name == command.Name))
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            var slug = Slugify.GenerateSlug(command.Slug);
-            var productCategory = new ProductCategory(command.Name, command.Description, fileName, command.PictureAlt, command.PictureTitle, command.KeyWord, command.MetaDescription, slug);
+            var productCategory = new ProductCategory(command.Name, command.Description, picturePath, command.PictureAlt, command.PictureTitle, command.KeyWord, command.MetaDescription, slug);
             _productCategoryRepository.Create(productCategory);
             _productCategoryRepository.SaveChange();
 

@@ -24,7 +24,7 @@ namespace ShopManagment.Application
             var operationResult = new OperationResult();
 
             var product = _productRepository.GetProductWithCategory(command.ProductId);
-            var path = $"{product.Category.Slug}//{product.Slug}";
+            var path = $"{"ProductPictures"}//{product.Category.Slug}//{product.Slug}";
             var picturePath = _fileUploader.Upload(command.Picture, path);
 
             var productPicture = new ProductPicture(product.Name, command.ProductId, picturePath, command.PictureAlt, command.PictureTitle);

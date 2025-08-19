@@ -72,24 +72,6 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-wwwroot\ProductPictures\Slides\2025-08-17-14-54-08-1.jpg
-wwwroot\ProductPictures\Slides\2025-08-17-14-55-27-4.jpg
-wwwroot\ProductPictures\برای-تست\محصول-تست\2025-08-16-10-50-05-Lucid_Origin_Create_a_highresolution_3D_logo_that_says_P_Craft_1.jpg
-wwwroot\ProductPictures\لوستر-آزمایشی\چراغ-خواب-سیلیکونی-مدل-خرگوش-خوابیده\2025-08-16-10-41-16-Untitled design (3).png
-wwwroot\uploads\1.jpg
-wwwroot\uploads\15.png
-wwwroot\uploads\27c6f699-8872-4431-9fdf-bd4b50535467.jpg
-wwwroot\uploads\4.jpg
-wwwroot\uploads\400574a8-1efc-4434-bb07-b0ef4c99fae1.jpg
-wwwroot\uploads\496de29c-da42-4caa-8d25-9c525ab8c67f.jpg
-wwwroot\uploads\4fe3a3e8-d8a4-48cd-9567-dd4e03096ee8.jpg
-wwwroot\uploads\5.jpg
-wwwroot\uploads\6d20c28b-b55e-4442-9efd-eb9ec9f523a3.jpg
-wwwroot\uploads\7.jpg
-wwwroot\uploads\82e260d9-b221-41de-8ff3-96c23d20fb79.jpg
-wwwroot\uploads\9f87a294-4cd1-4bbe-8b75-7ed4427ba374.jpg
-wwwroot\uploads\a0b55738-e791-48f8-9e19-ea70f02f081c.jpg
-wwwroot\uploads\d522e57c-d20f-4afd-bc85-93facd6ade7c.jpg
-wwwroot\uploads\dbb15dd7-5bc6-42a9-8675-ec86436e229f.jpg
-wwwroot\uploads\f2ce5d75-f2cf-497b-9587-75ea813d1fdb.jpg
-wwwroot\uploads\f87be957-fa90-4d9c-b22b-9e8901a489e8.jpg
+wwwroot\ProductPictures\Product\لوستر-سفید\2025-08-19-15-37-39-5.jpg
+wwwroot\ProductPictures\ProductCategory\محصولات-برقی\2025-08-19-15-33-19-4.jpg
+wwwroot\ProductPictures\ProductCategory\محصولات-خوراکی\2025-08-19-15-34-20-5.jpg
