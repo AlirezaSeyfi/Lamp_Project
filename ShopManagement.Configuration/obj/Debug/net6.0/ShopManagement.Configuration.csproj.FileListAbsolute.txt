@@ -1,11 +1,13 @@
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Configuration.deps.json
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Configuration.dll
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Configuration.pdb
+D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\01_LampQuery.dll
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\0_FrameWork.dll
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Infrastructure.EFCore.dll
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagment.Application.Contracts.dll
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagment.Application.dll
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\01_LampQuery.pdb
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Infrastructure.EFCore.pdb
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagment.Application.pdb
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\0_FrameWork.pdb
@@ -22,5 +24,3 @@ D:\Project\C#\Lamp_Project\ShopManagement.Configuration\obj\Debug\net6.0\ShopMan
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\obj\Debug\net6.0\refint\ShopManagement.Configuration.dll
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\obj\Debug\net6.0\ShopManagement.Configuration.pdb
 D:\Project\C#\Lamp_Project\ShopManagement.Configuration\obj\Debug\net6.0\ref\ShopManagement.Configuration.dll
-D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\01_LampQuery.dll
-D:\Project\C#\Lamp_Project\ShopManagement.Configuration\bin\Debug\net6.0\01_LampQuery.pdb

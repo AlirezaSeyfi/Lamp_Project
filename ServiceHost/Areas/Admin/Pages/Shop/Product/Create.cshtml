@@ -47,10 +47,10 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="CategoryId" class="control-label">گروه محصول</label>
-                                <select type="text" class="form-control fs-8" asp-for="CategoryId" asp-items='new SelectList(Model.Categories, "Id", "Name")'>
+                                <select type="text" class="form-control fs-8" asp-for="CategoryId" id="CategoryId" asp-items='new SelectList(Model.Categories, "Id", "Name")'>
                                     <option value="0" selected>گروه محصول ...</option>
                                 </select>
-                                <span asp-validation-for="CategoryId" class="text-danger fs-8"></span>
+                                <span asp-validation-for="CategoryId" class="text-danger fs-8" id="errorCategory"></span>
                             </div>
                         </div>
                     </div>
@@ -60,6 +60,7 @@
                             <div class="form-group">
                                 <label asp-for="Picture" class="control-label">عکس</label>
                                 <input type="file" class="form-control" asp-for="Picture" accept="image/*">
+                                <span asp-validation-for="Picture" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -69,12 +70,14 @@
                             <div class="form-group">
                                 <label asp-for="PictureAlt" class="control-label">Alt</label>
                                 <input type="text" class="form-control" asp-for="PictureAlt">
+                                <span asp-validation-for="PictureAlt" class="text-danger fs-8"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="PictureTitle" class="control-label">عنوان</label>
                                 <input type="text" class="form-control" asp-for="PictureTitle">
+                                <span asp-validation-for="PictureTitle" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -86,6 +89,7 @@
                                 <textarea class="form-control autogrow" asp-for="ShortDescription"
                                           onchange="fillField('ShortDescription', 'MetaDescription')"
                                           style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                                <span asp-validation-for="ShortDescription" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -95,6 +99,7 @@
                             <div class="form-group no-margin">
                                 <label asp-for="Description" class="control-label">توضیحات</label>
                                 <textarea class="form-control autogrow" asp-for="Description" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                                <span asp-validation-for="Description" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -140,3 +145,15 @@
         </div>
     </div>
 </div>
+
+<script>
+    const input = document.getElementById("UnitPrice");
+
+    input.addEventListener("input", () => {
+        // فقط اعداد رو نگه می‌داره و بقیه کاراکترها حذف می‌کنه
+        let value = input.value.replace(/\D/g, '');
+
+        // فرمت کردن با جداکننده هزارگان
+        input.value = Number(value).toLocaleString();
+    });
+</script>

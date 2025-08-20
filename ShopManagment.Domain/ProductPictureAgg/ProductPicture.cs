@@ -23,6 +23,7 @@ namespace ShopManagment.Domain.ProductPictureAgg
         }
         public void Edit(string productName, long productId, string picture, string pictureAlt, string pictureTitle)
         {
+            ProductName = productName;
             ProductId = productId;
             Picture = picture;
             PictureAlt = pictureAlt;

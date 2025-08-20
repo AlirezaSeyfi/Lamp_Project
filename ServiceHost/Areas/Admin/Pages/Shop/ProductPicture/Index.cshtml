@@ -186,6 +186,7 @@
     <script src="~/Admin_temp/js/site.js"></script>
     <script>
         $(document).ready(function() {
+
             $("#openModalLink").click(function(e) {
                 e.preventDefault();
 
@@ -207,6 +208,11 @@
                 var idToEdit = $(this).data("id");
                 $.get("/Admin/Shop/ProductPicture?handler=Edit&id=" + idToEdit, function(data) {
                     $("#modalContainer").html(data);
+
+                     //For validate Form Create
+                    var form = $("#modalContainer").find("form");
+                    $.validator.unobtrusive.parse(form);
+
                     var modal = new bootstrap.Modal(document.getElementById('edit'));
                     modal.show();
                 });

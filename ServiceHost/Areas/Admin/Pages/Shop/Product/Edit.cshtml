@@ -44,7 +44,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="UnitPrice" class="control-label">قیمت واحد</label>
-                                <input type="text" class="form-control" asp-for="UnitPrice">
+                                <input type="text" class="form-control" asp-for="UnitPrice" id="UnitPrice">
                                 <span asp-validation-for="UnitPrice" class="text-danger fs-8"></span>
                             </div>
                         </div>
@@ -144,3 +144,29 @@
         </div>
     </div>
 </div>
+
+<script>
+       function formatNumber(inputId) {
+        const input = document.getElementById(inputId);
+
+        function formatInput() {
+            let value = input.value.replace(/\D/g, '');
+            if (value) {
+                input.value = Number(value).toLocaleString();
+            } else {
+                input.value = '';
+            }
+        }
+
+        function cleanNumber() {
+            input.value = input.value.replace(/,/g, '');
+        }
+
+        window.addEventListener("DOMContentLoaded", formatInput);
+        input.addEventListener("input", formatInput);
+        input.closest('form').addEventListener("submit", cleanNumber);
+    }
+
+        // فراخوانی تابع برای UnitPrice
+    formatNumber('UnitPrice');
+</script>

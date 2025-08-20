@@ -242,12 +242,14 @@ D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\runtimes\win\lib\net6.0\
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\01_LampQuery.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\0_FrameWork.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagement.Configuration.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagement.Infrastructure.EFCore.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagment.Application.Contracts.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagment.Application.dll
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\01_LampQuery.pdb
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagement.Configuration.pdb
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\ShopManagement.Infrastructure.EFCore.pdb
 D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\0_FrameWork.pdb
@@ -282,5 +284,3 @@ D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\refint\ServiceHost.dll
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.pdb
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.genruntimeconfig.cache
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ref\ServiceHost.dll
-D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\01_LampQuery.dll
-D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\01_LampQuery.pdb

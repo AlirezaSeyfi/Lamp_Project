@@ -38,8 +38,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label asp-for="Picture" class="control-label">عکس</label>
-                                <input type="file" class="form-control" asp-for="Picture" accept="image/*">
+                                <label asp-for="PictureEdit" class="control-label">عکس</label>
+                                <input type="file" class="form-control NoValidate" asp-for="PictureEdit" accept="image/*">
                             </div>
                         </div>
                     </div>
@@ -49,12 +49,14 @@
                             <div class="form-group">
                                 <label asp-for="PictureAlt" class="control-label">Alt</label>
                                 <input type="text" class="form-control" asp-for="PictureAlt">
+                                <span asp-validation-for="PictureAlt" class="text-danger fs-8"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="PictureTitle" class="control-label">عنوان</label>
                                 <input type="text" class="form-control" asp-for="PictureTitle">
+                                <span asp-validation-for="PictureTitle" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -72,3 +74,7 @@
         </div>
     </div>
 </div>
+<script>
+    document.querySelectorAll(".NoValidate")
+    .forEach(el => el.removeAttribute("data-val-required"));
+</script>

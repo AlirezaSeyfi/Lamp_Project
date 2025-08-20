@@ -29,7 +29,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
         public ProductPicture GetWithProductAndCategory(long id)
         {
-            return _context.ProductPictures.FirstOrDefault(x=>x.Id==id);
+            return _context.ProductPictures.Include(x=>x.Product).ThenInclude(x=>x.Category).FirstOrDefault(x=>x.Id==id);
         }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)

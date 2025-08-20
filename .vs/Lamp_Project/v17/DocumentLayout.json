@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\Project\\C#\\Lamp_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\wwwroot\\css\\client.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\wwwroot\\css\\client.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A50B768E-476D-4E19-AD15-ED7AC3690850}|ShopManagment.Domain\\ShopManagment.Domain.csproj|d:\\project\\c#\\lamp_project\\shopmanagment.domain\\productpictureagg\\productpicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A50B768E-476D-4E19-AD15-ED7AC3690850}|ShopManagment.Domain\\ShopManagment.Domain.csproj|solutionrelative:shopmanagment.domain\\productpictureagg\\productpicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\pages\\shared\\components\\productcategory\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\pages\\shared\\components\\productcategory\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|d:\\project\\c#\\lamp_project\\shopmanagment.application\\productpictureapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{625A6CCC-EAFD-490F-8A90-CD5DF58ACA12}|ShopManagment.Application\\ShopManagment.Application.csproj|solutionrelative:shopmanagment.application\\productpictureapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\shop\\productpicture\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\shop\\productpicture\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\shop\\productpicture\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\shop\\productpicture\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\shop\\productcategories\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\shop\\productcategories\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\shop\\productpicture\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\shop\\productpicture\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductPicture.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ProductPictureAgg\\ProductPicture.cs",
+              "RelativeDocumentMoniker": "ShopManagment.Domain\\ProductPictureAgg\\ProductPicture.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ProductPictureAgg\\ProductPicture.cs*",
+              "RelativeToolTip": "ShopManagment.Domain\\ProductPictureAgg\\ProductPicture.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T16:20:32.31Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "client.css",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\wwwroot\\css\\client.css",
-              "RelativeDocumentMoniker": "ServiceHost\\wwwroot\\css\\client.css",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\wwwroot\\css\\client.css",
-              "RelativeToolTip": "ServiceHost\\wwwroot\\css\\client.css",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAkwHQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-20T05:19:26.847Z",
+              "DocumentIndex": 1,
+              "Title": "ProductPictureApplication.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\ProductPictureApplication.cs",
+              "RelativeDocumentMoniker": "ShopManagment.Application\\ProductPictureApplication.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application\\ProductPictureApplication.cs",
+              "RelativeToolTip": "ShopManagment.Application\\ProductPictureApplication.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA6wDYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T16:13:26.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Pages\\Index.cshtml",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Pages\\Index.cshtml",
-              "RelativeToolTip": "ServiceHost\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-20T05:17:22.402Z",
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Index.cshtml.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Index.cshtml.cs",
+              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Index.cshtml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T16:13:18.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Pages\\Shared\\Components\\ProductCategory\\Default.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Pages\\Shared\\Components\\ProductCategory\\Default.cshtml",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Pages\\Shared\\Components\\ProductCategory\\Default.cshtml",
-              "RelativeToolTip": "ServiceHost\\Pages\\Shared\\Components\\ProductCategory\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductCategories\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductCategories\\Index.cshtml.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductCategories\\Index.cshtml.cs",
+              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductCategories\\Index.cshtml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T16:12:08.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Index.cshtml",
+              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Index.cshtml",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Index.cshtml",
+              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-20T04:47:24.075Z",
+              "WhenOpened": "2025-08-20T16:09:04.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Edit.cshtml",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Edit.cshtml",
+              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Shop\\ProductPicture\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-20T16:07:59.007Z",
               "EditorCaption": ""
             }
           ]

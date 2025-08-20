@@ -64,17 +64,14 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Picture")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("PictureAlt")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("PictureTitle")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -110,7 +107,6 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(750)
                         .HasColumnType("nvarchar(750)");
 
@@ -130,17 +126,14 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Picture")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("PictureAlt")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("PictureTitle")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -233,17 +226,14 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("PictureTitle")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Text")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 

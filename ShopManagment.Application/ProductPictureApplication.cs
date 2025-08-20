@@ -42,11 +42,10 @@ namespace ShopManagment.Application
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
             string fileName = null;
-
-            if (command.Picture != null && command.Picture.Length > 0)
+            if (command.PictureEdit != null && command.PictureEdit.Length > 0)
             {
-                var path = $"{productPicture.Product.Category.Slug}//{productPicture.Product.Slug}";
-                var picturePath = _fileUploader.Upload(command.Picture, path);
+                var path = $"{"ProductPictures"}//{productPicture.Product.Category.Slug}//{productPicture.Product.Slug}";
+                fileName = _fileUploader.Upload(command.PictureEdit, path);
             }
             else
             {

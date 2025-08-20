@@ -40,7 +40,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label asp-for="Picture" class="control-label">عکس</label>
-                                <input type="file" class="form-control" asp-for="Picture" accept="image/*">
+                                <input type="file" class="form-control NoValidate" asp-for="Picture" accept="image/*">
                             </div>
                         </div>
                     </div>
@@ -49,13 +49,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="PictureAlt" class="control-label">Alt</label>
-                                <input type="text" class="form-control" asp-for="PictureAlt">
+                                <input type="text" class="form-control NoValidate" asp-for="PictureAlt">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="PictureTitle" class="control-label">عنوان</label>
-                                <input type="text" class="form-control" asp-for="PictureTitle">
+                                <input type="text" class="form-control NoValidate" asp-for="PictureTitle">
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                         <div class="col-md-12">
                             <div class="form-group no-margin">
                                 <label asp-for="Description" class="control-label">توضیحات</label>
-                                <textarea class="form-control autogrow" asp-for="Description"
+                                <textarea class="form-control autogrow NoValidate" asp-for="Description"
                                           onchange="fillField('Description', 'MetaDescription')"
                                           style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                             </div>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default waves-effect" data-bs-dismiss="modal"
-                                aria-label="Close">
+                            aria-label="Close">
                         بستن
                     </button>
                     <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد</button>
@@ -105,3 +105,8 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.querySelectorAll(".NoValidate")
+    .forEach(el => el.removeAttribute("data-val-required"));
+</script>

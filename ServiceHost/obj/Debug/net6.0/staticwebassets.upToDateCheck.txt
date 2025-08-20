@@ -19,6 +19,7 @@ wwwroot\fonts\Vazir.eot
 wwwroot\fonts\Vazir.ttf
 wwwroot\fonts\Vazir.woff
 wwwroot\fonts\Vazir.woff2
+wwwroot\js\DisableAutoFocus.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
@@ -77,11 +78,14 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-wwwroot\ProductPictures\Product\لوستر-سفید\2025-08-19-15-37-39-5.jpg
-wwwroot\ProductPictures\ProductCategory\محصولات-برقی\2025-08-19-15-33-19-4.jpg
-wwwroot\ProductPictures\ProductCategory\محصولات-خوراکی\2025-08-19-15-34-20-5.jpg
-wwwroot\ProductPictures\ProductPictures\محصولات-برقی\لوستر-سفید\2025-08-19-15-40-46-5.jpg
-wwwroot\ProductPictures\ProductPictures\محصولات-برقی\لوستر-سفید\2025-08-19-15-41-10-4.jpg
-wwwroot\ProductPictures\ProductPictures\محصولات-خوراکی\لوستر-سفید\2025-08-20-06-37-31-4.jpg
-wwwroot\ProductPictures\Slides\2025-08-20-06-35-48-1.jpg
-wwwroot\ProductPictures\Slides\2025-08-20-07-51-45-S (2).jpg
+wwwroot\ProductPictures\Product\مادربرد-ایسوس\2025-08-20-18-44-29-7.jpg
+wwwroot\ProductPictures\Product\مانیتور-سامسونگ\2025-08-20-19-35-37-1.jpg
+wwwroot\ProductPictures\ProductCategory\محصولات-برقی\2025-08-20-16-10-29-S (1).jpg
+wwwroot\ProductPictures\ProductCategory\محصولات-کامپیوتری\2025-08-20-16-10-57-Copilot_20250819_185838 (1).png
+wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-05-24-5.jpg
+wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-16-48-4.jpg
+wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-34-33-Copilot_20250819_185838 (1).png
+wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-45-47-Copilot_20250819_185838.png
+wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-45-56-4.jpg
+wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-49-55-Copilot_20250819_185838.png
+wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مانیتور-سامسونگ\2025-08-20-19-36-17-4.jpg

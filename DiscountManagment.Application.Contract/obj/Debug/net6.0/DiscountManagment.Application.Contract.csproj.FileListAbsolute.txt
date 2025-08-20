@@ -1,0 +1,16 @@
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\bin\Debug\net6.0\DiscountManagment.Application.Contract.deps.json
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\bin\Debug\net6.0\DiscountManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\bin\Debug\net6.0\DiscountManagment.Application.Contract.pdb
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\bin\Debug\net6.0\0_FrameWork.dll
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\bin\Debug\net6.0\0_FrameWork.pdb
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\DiscountManagment.Application.Contract.csproj.AssemblyReference.cache
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\DiscountManagment.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\DiscountManagment.Application.Contract.AssemblyInfoInputs.cache
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\DiscountManagment.Application.Contract.AssemblyInfo.cs
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\DiscountManagment.Application.Contract.csproj.CoreCompileInputs.cache
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\DiscountManagment.Application.Contract.sourcelink.json
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\Discount.76086438.Up2Date
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\DiscountManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\refint\DiscountManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\DiscountManagment.Application.Contract.pdb
+D:\Project\C#\Lamp_Project\DiscountManagment.Application.Contract\obj\Debug\net6.0\ref\DiscountManagment.Application.Contract.dll
