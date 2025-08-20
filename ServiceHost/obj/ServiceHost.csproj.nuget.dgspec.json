@@ -4,6 +4,75 @@
     "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\ServiceHost.csproj": {}
   },
   "projects": {
+    "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj",
+        "projectName": "01_LampQuery",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -107,6 +176,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj"
+              },
               "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
                 "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
               },
@@ -194,6 +266,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj"
+              },
               "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               },

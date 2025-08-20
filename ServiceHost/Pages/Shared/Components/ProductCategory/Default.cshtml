@@ -1,0 +1,24 @@
+﻿@using _01_LampQuery.Contract.ProductCategory
+@model List<ProductCategoryQueryModel>
+@{
+}
+
+<!-- Category -->
+<div class="Category my-2">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2">
+
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="item">
+                    <img src="~/ProductPictures/@item.Picture" alt="@item.PictureAlt" class="img-fluid w-100" title="@item.PictureTitle">
+                    <div class="caption">
+                        <h6>@item.Name</h6>
+                        <a href="#" class="d-block text-center py-1 text-decoration-none bg-secondary text-white rounded fs-8">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

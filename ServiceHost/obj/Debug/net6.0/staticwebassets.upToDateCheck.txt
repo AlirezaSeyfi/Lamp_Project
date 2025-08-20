@@ -12,8 +12,13 @@ wwwroot\Admin_temp\js\alpine.js
 wwwroot\Admin_temp\js\chart.js
 wwwroot\Admin_temp\js\purecounter_vanilla.js
 wwwroot\Admin_temp\js\site.js
+wwwroot\css\client.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\fonts\Vazir.eot
+wwwroot\fonts\Vazir.ttf
+wwwroot\fonts\Vazir.woff
+wwwroot\fonts\Vazir.woff2
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
@@ -75,3 +80,8 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\ProductPictures\Product\لوستر-سفید\2025-08-19-15-37-39-5.jpg
 wwwroot\ProductPictures\ProductCategory\محصولات-برقی\2025-08-19-15-33-19-4.jpg
 wwwroot\ProductPictures\ProductCategory\محصولات-خوراکی\2025-08-19-15-34-20-5.jpg
+wwwroot\ProductPictures\ProductPictures\محصولات-برقی\لوستر-سفید\2025-08-19-15-40-46-5.jpg
+wwwroot\ProductPictures\ProductPictures\محصولات-برقی\لوستر-سفید\2025-08-19-15-41-10-4.jpg
+wwwroot\ProductPictures\ProductPictures\محصولات-خوراکی\لوستر-سفید\2025-08-20-06-37-31-4.jpg
+wwwroot\ProductPictures\Slides\2025-08-20-06-35-48-1.jpg
+wwwroot\ProductPictures\Slides\2025-08-20-07-51-45-S (2).jpg

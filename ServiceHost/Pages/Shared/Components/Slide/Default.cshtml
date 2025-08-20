@@ -1,0 +1,27 @@
+﻿@using _01_LampQuery.Contract.Slide
+@model List<SlideQueryModel>
+@{
+}
+
+<!-- Slider -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+
+        @foreach (var item in Model)
+        {
+            <div class="swiper-slide">
+                <img src="~/ProductPictures/@item.Picture" class="d-block w-100" alt="@item.PictureAlt" title="@item.Title">
+                <div class="caption dir-rtl fade-element">
+                    <h5 class="text-secondary ">@item.Title</h5>
+                    <p class="text-secondary ">@item.Text</p>
+                </div>
+            </div>
+        }
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev" id="button-prev"></div>
+    <div class="swiper-button-next" id="button-next"></div>
+</div>

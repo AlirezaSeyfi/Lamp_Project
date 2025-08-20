@@ -961,6 +961,19 @@
           }
         }
       },
+      "01_LampQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_LampQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_LampQuery.dll": {}
+        }
+      },
       "0_FrameWork/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2504,6 +2517,11 @@
         "version.txt"
       ]
     },
+    "01_LampQuery/1.0.0": {
+      "type": "project",
+      "path": "../01_LampQuery/01_LampQuery.csproj",
+      "msbuildProject": "../01_LampQuery/01_LampQuery.csproj"
+    },
     "0_FrameWork/1.0.0": {
       "type": "project",
       "path": "../0_FrameWork/0_FrameWork.csproj",
@@ -2532,6 +2550,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "01_LampQuery >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.2",
       "ShopManagement.Infrastructure.EFCore >= 1.0.0",
       "ShopManagment.Application >= 1.0.0"
@@ -2569,6 +2588,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj": {
+              "projectPath": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\01_LampQuery.csproj"
+            },
             "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
               "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
             },

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"), url("../fonts/Vazir.woff2") format("woff2"), url("../fonts/Vazir.woff") format("woff"), url("../fonts/Vazir.ttf") format("truetype");
+    /* Safari, Android, iOS */
+}
+
+body {
+    font-family: "Vazir" !important;
+}
+
+/* Fade  */
+.fade-element {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+    .fade-element.visible {
+        opacity: 1;
+    }
+
+/* Helper */
+.bg-glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.dir-rtl {
+    direction: rtl !important;
+}
+
+.dir-ltr {
+    direction: ltr;
+}
+
+.fs-7 {
+    font-size: 0.9rem;
+}
+
+.fs-8 {
+    font-size: 0.8rem;
+}
+
+.fs-10 {
+    font-size: 0.6rem;
+}
+
+/* Header */
+header form input::placeholder {
+    color: #b2bec3 !important;
+    font-size: 0.8rem;
+}
+
+/* Slider */
+.swiper .swiper-wrapper .swiper-slide .caption {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+    height: 500px;
+}
+
+    .swiper .swiper-wrapper .swiper-slide img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Category */
+.Category .row .col .item {
+    height: 150px;
+    position: relative;
+}
+
+    .Category .row .col .item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Category .row .col .item .caption {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+
+/* Display Responsive */
+/* sm */
+@media (max-width: 576px) {
+    .swiper .swiper-wrapper .swiper-slide {
+        height: 350px;
+    }
+
+    .Category .row .col .item {
+        height: 150px;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+}
+
+/* lg */
+@media (max-width: 992px) {
+}
+
+/* xl */
+@media (max-width: 1200px) {
+}
+
+/* xxl */
+@media (max-width: 1400px) {
+}

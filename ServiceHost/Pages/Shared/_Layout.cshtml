@@ -1,51 +1,175 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ServiceHost</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ServiceHost.styles.css" asp-append-version="true" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <!-- Bootstrap 5 Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom Css -->
+    <link href="~/css/client.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="p-3 mb-3 border-bottom dir-rtl">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">ServiceHost</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-page="/Index">Admin</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <i class="bi bi-apple text-danger fs-1"></i>
+
+                    <ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 link-secondary">خانه</a></li>
+                        <li><a href="#" class="nav-link px-2 link-secondary">محصولات</a></li>
+                        <li><a href="#" class="nav-link px-2 link-secondary">تماس باما</a></li>
+                        <li><a href="#" class="nav-link px-2 link-secondary">گزارش مشکل</a></li>
                     </ul>
+
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 ms-lg-3">
+                        <input type="search" class="form-control" placeholder="جستجو..." aria-label="Search">
+                    </form>
+
+                    <div class="dropdown text-end">
+                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32"
+                                 class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-end fs-8 mt-2" aria-labelledby="dropdownUser1" style="">
+                            <li><a class="dropdown-item" href="#">علیرضا</a></li>
+                            <li><a class="dropdown-item" href="#">تنظمیات</a></li>
+                            <li><a class="dropdown-item" href="#">پروفایل</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">خروج</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+        </header>
+
+        @* Main *@
+        <div>
             @RenderBody()
-        </main>
+        </div>
+
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - ServiceHost - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+    <!-- Js Bootstrap 5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function myPlugin({ swiper, extendParams, on }) {
+            extendParams({
+                debugger: false,
+            });
+
+            on('init', () => {
+                if (!swiper.params.debugger) return;
+                console.log('init');
+            });
+            on('click', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('click');
+            });
+            on('tap', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('tap');
+            });
+            on('doubleTap', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('doubleTap');
+            });
+            on('sliderMove', (swiper, e) => {
+                if (!swiper.params.debugger) return;
+                console.log('sliderMove');
+            });
+            on('slideChange', () => {
+                if (!swiper.params.debugger) return;
+                console.log(
+                    'slideChange',
+                    swiper.previousIndex,
+                    '->',
+                    swiper.activeIndex
+                );
+            });
+            on('slideChangeTransitionStart', () => {
+                if (!swiper.params.debugger) return;
+                console.log('slideChangeTransitionStart');
+            });
+            on('slideChangeTransitionEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('slideChangeTransitionEnd');
+            });
+            on('transitionStart', () => {
+                if (!swiper.params.debugger) return;
+                console.log('transitionStart');
+            });
+            on('transitionEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('transitionEnd');
+            });
+            on('fromEdge', () => {
+                if (!swiper.params.debugger) return;
+                console.log('fromEdge');
+            });
+            on('reachBeginning', () => {
+                if (!swiper.params.debugger) return;
+                console.log('reachBeginning');
+            });
+            on('reachEnd', () => {
+                if (!swiper.params.debugger) return;
+                console.log('reachEnd');
+            });
+        }
+    </script>
+    <script>
+        // Init Swiper
+        var swiper = new Swiper('.swiper', {
+            // Install Plugin To Swiper
+            modules: [myPlugin],
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Enable debugger
+            debugger: true,
+        });
+    </script>
+
+    <!-- Custom JS -->
+    <script>
+        let slides = document.querySelectorAll(".fade-element");
+
+        // نمایش متن مرتبط با اسلاید فعال
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("visible"));
+            slides[index].classList.add("visible");
+        }
+
+        // موقع تغییر اسلاید (از طریق Swiper)
+        swiper.on('slideChange', function () {
+            showSlide(swiper.activeIndex);
+        });
+
+        // اولین بار هنگام لود
+        showSlide(swiper.activeIndex);
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

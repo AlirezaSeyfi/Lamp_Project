@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ServiceHost/1.0.0": {
         "dependencies": {
+          "01_LampQuery": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.36",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.18",
           "ShopManagement.Configuration": "1.0.0",
@@ -2579,6 +2580,17 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "01_LampQuery/1.0.0": {
+        "dependencies": {
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "runtime": {
+          "01_LampQuery.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "0_FrameWork/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.3.0",
@@ -2593,6 +2605,7 @@
       },
       "ShopManagement.Configuration/1.0.0": {
         "dependencies": {
+          "01_LampQuery": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "ShopManagement.Infrastructure.EFCore": "1.0.0",
           "ShopManagment.Application": "1.0.0"
@@ -4195,6 +4208,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "01_LampQuery/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "0_FrameWork/1.0.0": {
       "type": "project",
