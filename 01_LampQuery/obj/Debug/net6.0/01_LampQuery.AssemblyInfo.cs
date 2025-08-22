@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("01_LampQuery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24febf366f2ca70fd8749f0a0941cd713599f172")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4383fc0dd1ffbaf2574c4184117f927aca3ac57")]
 [assembly: System.Reflection.AssemblyProductAttribute("01_LampQuery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("01_LampQuery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

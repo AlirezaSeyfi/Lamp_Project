@@ -23,12 +23,14 @@
                             <div class="form-group">
                                 <label asp-for="Heading" class="control-label">سر تیتر</label>
                                 <input type="text" class="form-control" asp-for="Heading">
+                                <span asp-validation-for="Text" class="text-danger fs-8"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="Title" class="control-label">عنوان</label>
                                 <input type="text" class="form-control" asp-for="Title">
+                                <span asp-validation-for="Title" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -38,6 +40,7 @@
                             <div class="form-group">
                                 <label asp-for="Picture" class="control-label">عکس</label>
                                 <input type="file" class="form-control" asp-for="Picture" accept="image/*">
+                                <span asp-validation-for="Picture" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -46,13 +49,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="PictureAlt" class="control-label">Alt</label>
-                                <input type="text" class="form-control" asp-for="PictureAlt">
+                                <input type="text" class="form-control NoValidate" asp-for="PictureAlt">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="PictureTitle" class="control-label">عنوان عکس</label>
-                                <input type="text" class="form-control" asp-for="PictureTitle">
+                                <input type="text" class="form-control NoValidate" asp-for="PictureTitle">
                             </div>
                         </div>
                     </div>
@@ -62,12 +65,14 @@
                             <div class="form-group">
                                 <label asp-for="Text" class="control-label">متن اسلاید</label>
                                 <input type="text" class="form-control" asp-for="Text">
+                                <span asp-validation-for="Text" class="text-danger fs-8"></span>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label asp-for="BtnText" class="control-label">متن دکمه</label>
                                 <input type="text" class="form-control" asp-for="BtnText">
+                                <span asp-validation-for="BtnText" class="text-danger fs-8"></span>
                             </div>
                         </div>
                     </div>
@@ -85,3 +90,7 @@
         </div>
     </div>
 </div>
+<script>
+    document.querySelectorAll(".NoValidate")
+    .forEach(el => el.removeAttribute("data-val-required"));
+</script>

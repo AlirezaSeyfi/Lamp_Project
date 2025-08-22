@@ -1,4 +1,5 @@
 using _0_FrameWork.Application;
+using DiscountManagement.Configuration;
 using ServiceHost;
 using ShopManagement.Configuration;
 
@@ -10,6 +11,7 @@ builder.Services.AddRazorPages();
 
 var connectionString = builder.Configuration.GetConnectionString("LampProjectDB");
 ShopManagementBootstrapper.Configure(builder.Services, connectionString);
+DiscountManagementBootstrapper.Configure(builder.Services, connectionString);
 builder.Services.AddTransient<IFileUploader, FileUploader>();
 
 

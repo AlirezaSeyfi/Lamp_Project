@@ -81,6 +81,7 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\ProductPictures\Product\مادربرد-ایسوس\2025-08-20-18-44-29-7.jpg
 wwwroot\ProductPictures\Product\مانیتور-سامسونگ\2025-08-20-19-35-37-1.jpg
 wwwroot\ProductPictures\ProductCategory\محصولات-برقی\2025-08-20-16-10-29-S (1).jpg
+wwwroot\ProductPictures\ProductCategory\محصولات-خوراکی\2025-08-22-11-21-39-7.jpg
 wwwroot\ProductPictures\ProductCategory\محصولات-کامپیوتری\2025-08-20-16-10-57-Copilot_20250819_185838 (1).png
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-05-24-5.jpg
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-16-48-4.jpg
@@ -89,3 +90,6 @@ wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\ماد
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-45-56-4.jpg
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-49-55-Copilot_20250819_185838.png
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مانیتور-سامسونگ\2025-08-20-19-36-17-4.jpg
+wwwroot\ProductPictures\Slides\2025-08-20-20-09-59-Copilot_20250819_185838 (1).png
+wwwroot\ProductPictures\Slides\2025-08-20-20-12-50-1.jpg
+wwwroot\ProductPictures\Slides\2025-08-20-20-15-57-4.jpg

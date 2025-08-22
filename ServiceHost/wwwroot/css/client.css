@@ -44,6 +44,10 @@ body {
     font-size: 0.8rem;
 }
 
+.fs-9 {
+    font-size: 0.7rem;
+}
+
 .fs-10 {
     font-size: 0.6rem;
 }
@@ -83,8 +87,8 @@ header form input::placeholder {
 
     .Category .row .col .item .caption {
         position: absolute;
-        bottom: 15px;
-        right: 15px;
+        top: 5px;
+        left: 5px;
     }
 
 /* Display Responsive */

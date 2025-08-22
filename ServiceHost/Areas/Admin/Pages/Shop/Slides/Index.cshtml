@@ -170,6 +170,11 @@
                 var idToEdit = $(this).data("id");
                 $.get("/Admin/Shop/Slides?handler=Edit&id=" + idToEdit, function(data) {
                     $("#modalContainer").html(data);
+
+                    //For validate Form Create
+                    var form = $("#modalContainer").find("form");
+                    $.validator.unobtrusive.parse(form);
+
                     var modal = new bootstrap.Modal(document.getElementById('edit'));
                     modal.show();
                 });

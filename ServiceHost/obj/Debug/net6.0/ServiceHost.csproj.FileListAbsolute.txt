@@ -284,3 +284,13 @@ D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\refint\ServiceHost.dll
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.pdb
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.genruntimeconfig.cache
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ref\ServiceHost.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagement.Configuration.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagement.Infrastructure.EFCore.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagment.Application.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagement.Configuration.pdb
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagment.Application.pdb
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagment.Application.Contract.pdb
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\DiscountManagment.Domain.pdb

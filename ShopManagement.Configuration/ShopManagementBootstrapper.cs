@@ -1,5 +1,4 @@
-﻿using _0_FrameWork.Application;
-using _01_LampQuery.Contract.ProductCategory;
+﻿using _01_LampQuery.Contract.ProductCategory;
 using _01_LampQuery.Contract.Slide;
 using _01_LampQuery.Query;
 using Microsoft.EntityFrameworkCore;
@@ -14,7 +13,6 @@ using ShopManagment.Application.Contracts.Slide;
 using ShopManagment.Domain.IProductPictureRepository;
 using ShopManagment.Domain.ProductAgg;
 using ShopManagment.Domain.ProductCategoryAgg;
-using ShopManagment.Domain.ProductPictureAgg;
 using ShopManagment.Domain.SliderAgg;
 
 namespace ShopManagement.Configuration

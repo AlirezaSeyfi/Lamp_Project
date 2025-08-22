@@ -49,7 +49,7 @@ namespace ShopManagment.Application
                 fileName = command.ExistingPicturePath;
             }
 
-            slide.Edit(fileName, command.PictureAlt, command.Title, command.Heading, command.Title, command.Text, command.BtnText);
+            slide.Edit(fileName, command.PictureAlt, command.PictureTitle, command.Heading, command.Title, command.Text, command.BtnText);
             _slideRepository.SaveChange();
             return operationResult.Succedded();
         }
