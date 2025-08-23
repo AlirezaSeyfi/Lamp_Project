@@ -12,17 +12,25 @@
     <ul class="list-unstyled">
 
         <!-- item -->
-        <li class="sidebar-item">
-            <a asp-page="/index" class="sidebar-link">
+        <li class="sidebar-item ">
+            <a asp-page="/index" class="sidebar-link border-solid-gray">
                 <i class="bi bi-speedometer2 ms-2"></i>
                 <span class="fs-8">داشبورد</span>
             </a>
         </li>
 
         <!-- item -->
-        <li class="sidebar-item" x-data="dropdown">
+        <li class="sidebar-item ">
+            <a asp-page="/Shop/Slides/index" class="sidebar-link border-solid-gray">
+                <i class="bi bi-signpost-split ms-2"></i>
+                <span class="fs-8">اسلاید</span>
+            </a>
+        </li>
 
-            <div @@click="toggle" class="sidebar-link">
+        <!-- item -->
+        <li class="sidebar-item " x-data="dropdown">
+
+            <div @@click="toggle" class="sidebar-link border-solid-gray">
                 <i class="bi bi-basket2 ms-2"></i>
                 <span class="fs-8">محصولات</span>
                 <i class="bi bi-chevron-down me-auto"></i>
@@ -46,11 +54,29 @@
         </li>
 
         <!-- item -->
-        <li class="sidebar-item">
-            <a asp-page="/Shop/Slides/index" class="sidebar-link">
-                <i class="bi bi-signpost-split ms-2"></i>
-                <span class="fs-8">اسلاید</span>
-            </a>
+        <li class="sidebar-item" x-data="dropdown">
+
+            <div @@click="toggle" class="sidebar-link border-solid-gray">
+                <i class="bi bi-percent ms-2"></i>
+                <span class="fs-8">سیستم تخفیفات</span>
+                <i class="bi bi-chevron-down me-auto"></i>
+            </div>
+
+            <ul x-show="open" x-transition class="submenu list-unstyled">
+
+                <li class="submenu-item">
+                    <a asp-page="/Discounts/CustomerDiscount/Index" class="fs-8">تخفیف مشتری</a>
+                </li>
+
+                <li class="submenu-item">
+                    <a asp-page="/Discounts/CustomerDiscount/Index" class="fs-8">محصولات</a>
+                </li>
+
+                <li class="submenu-item">
+                    <a asp-page="/Discounts/CustomerDiscount/Index" class="fs-8">گالری محصولات</a>
+                </li>
+            </ul>
+
         </li>
 
     </ul>

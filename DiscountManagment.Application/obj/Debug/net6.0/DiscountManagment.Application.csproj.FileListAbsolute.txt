@@ -4,9 +4,11 @@ D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\Discou
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\0_FrameWork.dll
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\DiscountManagment.Application.Contract.dll
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\DiscountManagment.Domain.dll
+D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\ShopManagment.Application.Contracts.dll
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\DiscountManagment.Application.Contract.pdb
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\DiscountManagment.Domain.pdb
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\0_FrameWork.pdb
+D:\Project\C#\Lamp_Project\DiscountManagment.Application\bin\Debug\net6.0\ShopManagment.Application.Contracts.pdb
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\obj\Debug\net6.0\DiscountManagment.Application.csproj.AssemblyReference.cache
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\obj\Debug\net6.0\DiscountManagment.Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\Project\C#\Lamp_Project\DiscountManagment.Application\obj\Debug\net6.0\DiscountManagment.Application.AssemblyInfoInputs.cache

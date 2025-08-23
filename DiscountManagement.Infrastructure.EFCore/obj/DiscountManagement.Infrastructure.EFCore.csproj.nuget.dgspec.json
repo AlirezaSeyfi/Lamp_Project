@@ -197,6 +197,9 @@
             "projectReferences": {
               "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
                 "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj"
               }
             }
           }
@@ -216,6 +219,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

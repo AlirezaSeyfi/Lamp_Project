@@ -20,22 +20,22 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
 
         public void Create(CustomerDiscount entity)
         {
-            throw new NotImplementedException();
+            _discountContext.Add(entity);
         }
 
         public bool Exists(Expression<Func<CustomerDiscount, bool>> expression)
         {
-            throw new NotImplementedException();
+            return _discountContext.customerDiscounts.Any(expression);
         }
 
         public CustomerDiscount Get(long id)
         {
-            throw new NotImplementedException();
+            return _discountContext.customerDiscounts.FirstOrDefault(x=>x.Id==id);
         }
 
         public List<CustomerDiscount> GetAll()
         {
-            throw new NotImplementedException();
+            return _discountContext.customerDiscounts.ToList();
         }
 
         public EditCustomerDiscount GetDetails(long id)
@@ -43,22 +43,22 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
             return _discountContext.customerDiscounts
                 .Select(x => new EditCustomerDiscount()
                 {
-                    Id = id,
+                    Id = x.Id,
                     DiscountRange = x.DiscountRange,
                     Reason = x.Reason,
                     ProductId = x.ProductId,
-                    StartDate = x.StartDate.ToFarsi(),
-                    EndDate = x.EndDate.ToFarsi()
+                    StartDate = x.StartDate.ToString(),
+                    EndDate = x.EndDate.ToString()
                 })
                 .FirstOrDefault(x => x.Id == id);
         }
 
         public void SaveChange()
         {
-            throw new NotImplementedException();
+            _discountContext.SaveChanges();
         }
 
-        public List<CustomerDiscountViewModel> Search(CustomerDiscounSearchModel searchModel)
+        public List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel searchModel)
         {
             var products = _shopContext.Products.Select(x => new { x.Id, x.Name }).ToList();
             var query = _discountContext.customerDiscounts.Select(x => new CustomerDiscountViewModel()
@@ -71,6 +71,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 EndDateGr = x.EndDate,
                 ProductId = x.ProductId,
                 Reason = x.Reason,
+                CreationDate=x.CreationDate.ToFarsi()
             });
 
             if (searchModel.ProductId > 0)
@@ -78,12 +79,12 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
 
             if (!string.IsNullOrWhiteSpace(searchModel.StartDate))
             {
-                query = query.Where(x => x.StartDateGr > searchModel.StartDate.ToGeorgianDateTime());
+                query = query.Where(x => x.StartDateGr >= searchModel.StartDate.ToGeorgianDateTime());
             }
 
             if (!string.IsNullOrWhiteSpace(searchModel.StartDate))
             {
-                query = query.Where(x => x.EndDateGr < searchModel.EndDate.ToGeorgianDateTime());
+                query = query.Where(x => x.EndDateGr <= searchModel.EndDate.ToGeorgianDateTime());
             }
 
             var discounts = query.OrderByDescending(x=>x.Id).ToList();

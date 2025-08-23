@@ -109,6 +109,9 @@
             "projectReferences": {
               "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
                 "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj"
               }
             }
           }
@@ -128,6 +131,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -272,6 +285,85 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj",
+        "projectName": "ShopManagment.Application.Contracts",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

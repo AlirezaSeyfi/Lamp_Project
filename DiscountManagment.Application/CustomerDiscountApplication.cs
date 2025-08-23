@@ -34,13 +34,12 @@ namespace DiscountManagment.Application
             if (customerDiscount == null)
                 return operationResult.Failed(ApplicationMessages.RecordNotFound);
 
-            if (_customerDiscountRepository.Exists(x => x.ProductId == command.ProductId && x.DiscountRange == command.DiscountRange && x.Id == command.Id))
-                return operationResult.Failed(ApplicationMessages.DuplicatedRecord);
+            //if (_customerDiscountRepository.Exists(x => x.ProductId == command.ProductId && x.DiscountRange == command.DiscountRange && x.Id == command.Id))
+            //    return operationResult.Failed(ApplicationMessages.DuplicatedRecord);
 
             var startDate = command.StartDate.ToGeorgianDateTime();
             var endDate = command.EndDate.ToGeorgianDateTime();
             customerDiscount.Edit(command.ProductId, command.DiscountRange, startDate, endDate, command.Reason);
-            _customerDiscountRepository.Create(customerDiscount);
             _customerDiscountRepository.SaveChange();
             return operationResult.Succedded();
         }
@@ -50,7 +49,7 @@ namespace DiscountManagment.Application
             return _customerDiscountRepository.GetDetails(id);
         }
 
-        public List<CustomerDiscountViewModel> Search(CustomerDiscounSearchModel searchModel)
+        public List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel searchModel)
         {
             return _customerDiscountRepository.Search(searchModel);
         }
