@@ -9,7 +9,7 @@ namespace DiscountManagment.Application.Contract.CustomerDiscount
         [Range(1, int.MaxValue, ErrorMessage = "لطفاً یک محصول انتخاب کنید")]
         public long ProductId { get;  set; }
 
-        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        [Range(1, 99, ErrorMessage = ValidationMessages.IsRequired)]
         public int DiscountRange { get;  set; }
         
         public string StartDate { get;  set; }

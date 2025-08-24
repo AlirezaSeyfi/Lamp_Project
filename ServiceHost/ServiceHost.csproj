@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\01_LampQuery\01_LampQuery.csproj" />
     <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Infrastructure.Configuration\InventoryManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\ShopManagement.Configuration\ShopManagement.Configuration.csproj" />
     <ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
   </ItemGroup>

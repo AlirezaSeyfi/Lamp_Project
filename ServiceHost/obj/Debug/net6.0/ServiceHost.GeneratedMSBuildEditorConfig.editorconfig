@@ -20,6 +20,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Discounts/ColleagueDiscount/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Discounts/ColleagueDiscount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Discounts/ColleagueDiscount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project/C\#/Lamp_Project/ServiceHost/Areas/Admin/Pages/Discounts/CustomerDiscount/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXEN1c3RvbWVyRGlzY291bnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

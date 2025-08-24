@@ -34,7 +34,7 @@ namespace DiscountManagment.Application
             if (colleagueDiscount == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            if (_colleagueDiscountRepository.Exists(x => x.ProductId == command.ProductId && x.DiscountRate == command.DiscountRate && x.Id != command.Id))
+            if (_colleagueDiscountRepository.Exists(x => x.ProductId == command.ProductId && x.Id!=command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
 
             colleagueDiscount.Edit(command.ProductId, command.DiscountRate);

@@ -1,0 +1,555 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Project\\C#\\Lamp_Project\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {}
+  },
+  "projects": {
+    "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj",
+        "projectName": "0_FrameWork",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj",
+        "projectName": "InventoryManagment.Application.Contract",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj",
+        "projectName": "InventoryManagment.Domain",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\C#\\Lamp_Project\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj",
+        "projectName": "InventoryMangement.Infrastructure.EFCore",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\InventoryMangement.Infrastructure.EFCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+        "projectName": "ShopManagement.Infrastructure.EFCore",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj",
+        "projectName": "ShopManagment.Application.Contracts",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj",
+        "projectName": "ShopManagment.Domain",
+        "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\ShopManagment.Domain.csproj",
+        "packagesPath": "C:\\Users\\Person\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Install\\MVS\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Person\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\0_FrameWork\\0_FrameWork.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\ShopManagment.Application.Contracts\\ShopManagment.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
