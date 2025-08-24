@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Project\\C#\\Lamp_Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4384BB41-9B39-4A50-8A26-14DB6F78F64B}|DiscountManagment.Application\\DiscountManagment.Application.csproj|d:\\project\\c#\\lamp_project\\discountmanagment.application\\colleaguediscountapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4384BB41-9B39-4A50-8A26-14DB6F78F64B}|DiscountManagment.Application\\DiscountManagment.Application.csproj|solutionrelative:discountmanagment.application\\colleaguediscountapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColleagueDiscountApplication.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\DiscountManagment.Application\\ColleagueDiscountApplication.cs",
+              "RelativeDocumentMoniker": "DiscountManagment.Application\\ColleagueDiscountApplication.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\DiscountManagment.Application\\ColleagueDiscountApplication.cs*",
+              "RelativeToolTip": "DiscountManagment.Application\\ColleagueDiscountApplication.cs*",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEMAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T07:27:26.885Z",
+              "EditorCaption": ""
             }
           ]
         }
