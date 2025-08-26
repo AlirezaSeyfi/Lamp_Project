@@ -45,9 +45,6 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsStock")
-                        .HasColumnType("bit");
-
                     b.Property<string>("KeyWords")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -84,9 +81,6 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                         .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
-
-                    b.Property<double>("UnitPrice")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

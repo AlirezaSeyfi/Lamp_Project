@@ -54,25 +54,5 @@ namespace ServiceHost.Areas.Admin.Pages.Shop.Product
             var result = _productApplication.Edit(command);
             return new JsonResult(result);
         }
-
-        public IActionResult OnGetNotInStock(long id)
-        {
-            var result = _productApplication.NotInStock(id);
-            if (result.IsSuccedded)
-                return RedirectToPage(new { area = "Admin" });
-
-            Message = result.Message;
-            return RedirectToPage(new { area = "Admin" });
-        }
-
-        public IActionResult OnGetIsInStock(long id)
-        {
-            var result = _productApplication.InStock(id);
-            if (result.IsSuccedded)
-                return RedirectToPage(new { area = "Admin" });
-
-            Message = result.Message;
-            return RedirectToPage(new { area = "Admin" });
-        }
     }
 }

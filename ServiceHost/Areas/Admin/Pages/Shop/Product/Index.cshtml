@@ -50,10 +50,7 @@
                             <th scope="col">نام محصول</th>
                             <th scope="col">کد</th>
                             <th scope="col">گروه</th>
-                            <th scope="col">قیمت</th>
-                            <th scope="col">موجودی</th>
                             <th scope="col">تاریخ ثبت</th>
-                            <th scope="col">تعداد</th>
                             <th scope="col">عملیات</th>
                         </tr>
                     </thead>
@@ -67,23 +64,7 @@
                                 <td>@item.Name</td>
                                 <td>@item.Code</td>
                                 <td>@item.Category</td>
-                                <td>@Tools.ToPriceFormat(@item.UnitPrice)</td>
-                                <td>
-                                    @if (item.InStock)
-                                    {
-                                        <div class="d-block text-center">
-                                            <i class="bi bi-check2 fs-4 text-success fw-bold"></i>
-                                        </div>
-                                    }
-                                    else
-                                    {
-                                        <div class="d-block text-center">
-                                            <i class="bi bi-x fs-4 text-danger fw-bold"></i>
-                                        </div>
-                                    }
-                                </td>
                                 <td>@item.CreationDate</td>
-                                <td>12</td>
                                 <td>
                                     <div class="d-flex justify-content-between">
                                         <div class="dropdown">
@@ -100,21 +81,6 @@
 
                                                 <li><a class="dropdown-item" href="#">حذف</a></li>
                                             </ul>
-                                        </div>
-
-                                        <div>
-                                            @if (item.InStock)
-                                            {
-                                                <div>
-                                                    <a class="btn btn-outline-danger fs-8" asp-page="index" asp-page-handler="NotInStock" asp-route-id="@item.Id">اتمام موجودی</a>
-                                                </div>
-                                            }
-                                            else
-                                            {
-                                                <div>
-                                                    <a class="btn btn-outline-success fs-8" asp-page="index" asp-page-handler="IsInStock" asp-route-id="@item.Id">موجود شد</a>
-                                                </div>
-                                            }
                                         </div>
                                     </div>
                                 </td>
@@ -168,7 +134,7 @@
                             نام
                             محصول
                         </label>
-                        <input type="text" class="form-control fs-8" asp-for="SearchModel.Name"
+                        <input type="text" class="form-control fs-8 NoValidate" asp-for="SearchModel.Name"
                                aria-describedby="emailHelp">
                     </divdiv>
 
@@ -176,13 +142,13 @@
                         <label for="exampleInputEmail1" class="form-label fs-8" asp-for="SearchModel.Code">
                             کد محصول
                         </label>
-                        <input type="text" class="form-control fs-8" asp-for="SearchModel.Code"
+                        <input type="text" class="form-control fs-8 NoValidate" asp-for="SearchModel.Code"
                                aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label fs-8" asp-for="SearchModel.CategoryId">دسته بندی</label>
-                        <select class="form-select fs-8" aria-label="Default select example" asp-for="SearchModel.CategoryId" asp-items="Model.ProductCategories">
+                        <select class="form-select fs-8 NoValidate" aria-label="Default select example" asp-for="SearchModel.CategoryId" asp-items="Model.ProductCategories">
                             <option value="0" selected>گروه محصولی ...</option>
                         </select>
                     </div>
@@ -241,6 +207,12 @@
         });
     </script>
     <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.querySelectorAll(".NoValidate")
+        .forEach(el => el.removeAttribute("data-val-required"));
+    </script>
+
 }
 
 

@@ -1,0 +1,54 @@
+﻿@using InventoryManagment.Application.Contract.Inventory
+@model IncreaseInventory
+@{
+
+}
+<!-- Modal Create -->
+<div class="modal" id="edit" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header justify-content-between dir-ltr">
+                <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                <h4 class="modal-title mb-3">افزایش موجودی</h4>
+            </div>
+
+            <form asp-page="./Index" asp-page-handler="Increase" method="post" data-ajax="true" data-callback=""
+                  data-action="Refresh" enctype="multipart/form-data">
+
+                 <input type="hidden" asp-for="InventoryId" value="@Model.InventoryId" /> 
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="Count" class="control-label">تعداد</label>
+                                <input asp-for="Count" class="form-control" />
+                                <span asp-validation-for="Count" class="text-danger fs-8" id="errorCategory"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="Description" class="control-label">توضیحات</label>
+                                <textarea rows="3" class="form-control" asp-for="Description"></textarea>
+                                <span asp-validation-for="Description" class="text-danger fs-8"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default waves-effect" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        بستن
+                    </button>
+                    <button type="submit" class="btn btn-info waves-effect waves-light">ویرایش</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,82 @@
+﻿@using InventoryManagment.Application.Contract.Inventory
+@model List<InventoryOperationViewModel>
+@{
+
+}
+<div class="modal" id="OperationLog" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header justify-content-between dir-ltr">
+                <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                <h4 class="modal-title">سوابق گردش انبار</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="table-responsive border border-1 rounded p-2">
+                    <table class="table product table-rounded m-0 align-middle" id="PTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">تعداد</th>
+                                <th scope="col">تاریخ عملیات</th>
+                                <th scope="col">موجودی فعلی</th>
+                                <th scope="col">عملگر</th>
+                                <th scope="col">توضیحات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr class="@(item.Operation ? "table-success":"table-danger")">
+                                    <th scope="row">@item.Id</th>
+                                    <td>@item.Count</td>
+                                    <td>@item.OperationDate</td>
+                                    <td>@item.CurrentCount</td>
+                                    <td>@item.Operator</td>
+                                    <td>@item.Description</td>
+                                   @*  <td>
+                                        <div class="d-flex justify-content-start gap-2">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                    عملیات
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">نمایش</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item openModalLinkEdit" href="#" data-id="@item.Id">ویرایش</a>
+                                                    </li>
+
+                                                    <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                <a class="btn btn-outline-success fs-8 openModalLinkIncrease" data-id="@item.Id">افزایش موجودی</a>
+                                            </div>
+                                            <div>
+                                                <a class="btn btn-outline-danger fs-8 openModalLinkReduce" data-id="@item.Id">کاهش موجودی</a>
+                                            </div>
+                                        </div>
+                                    </td> *@
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default waves-effect" data-bs-dismiss="modal"
+                        aria-label="Close">
+                    بستن
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

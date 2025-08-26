@@ -242,21 +242,22 @@
 
     <script>
         $(document).ready(function () {
-            $(".persianDate").pDatepicker({
-                format: "YYYY/MM/DD",
-                autoClose: true,
-                calendar: {
-                    persian: true
-                },
-                navigator: {
-                    text: {
-                        btnNextText: "بعدی",
-                        btnPrevText: "قبلی"
-                    }
-                },
-                timezone: "Asia/Tehran", // تنظیم منطقه زمانی ایران
-                initialDate: new Date() // تنظیم تاریخ اولیه به امروز
-            });
+                    $(".persianDate").pDatepicker({
+            format: "YYYY/MM/DD",
+            autoClose: true,
+            calendar: {
+                persian: true
+            },
+            navigator: {
+                text: {
+                    btnNextText: "بعدی",
+                    btnPrevText: "قبلی"
+                }
+            },
+            initialValueType: "persian", // 👈 این خیلی مهمه
+            initialValue: true           // یعنی تاریخ امروز شمسی رو نشون بده
+        });
+
         });
     </script>
 }

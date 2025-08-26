@@ -28,6 +28,14 @@
         </li>
 
         <!-- item -->
+        <li class="sidebar-item ">
+            <a asp-page="/Inventory/index" class="sidebar-link border-solid-gray">
+                <i class="bi bi-signpost-split ms-2"></i>
+                <span class="fs-8">انبار</span>
+            </a>
+        </li>
+
+        <!-- item -->
         <li class="sidebar-item " x-data="dropdown">
 
             <div @@click="toggle" class="sidebar-link border-solid-gray">
@@ -70,10 +78,6 @@
 
                 <li class="submenu-item">
                     <a asp-page="/Discounts/ColleagueDiscount/Index" class="fs-8">تخفیف همکاری</a>
-                </li>
-
-                <li class="submenu-item">
-                    <a asp-page="/Discounts/CustomerDiscount/Index" class="fs-8">گالری محصولات</a>
                 </li>
             </ul>
 

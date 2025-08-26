@@ -215,7 +215,7 @@ body {
     }
 
     /* Table */
-    .content .card .table.product tbody td {
+    .content .card .table.product tbody td, #OperationLog .table.product tbody td{
         color: #636e72;
         font-size: 0.8rem;
     }

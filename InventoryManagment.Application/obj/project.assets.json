@@ -479,6 +479,20 @@
           "bin/placeholder/InventoryManagment.Application.Contract.dll": {}
         }
       },
+      "InventoryManagment.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "InventoryManagment.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagment.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagment.Domain.dll": {}
+        }
+      },
       "ShopManagment.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1074,6 +1088,11 @@
       "path": "../InventoryManagment.Application.Contract/InventoryManagment.Application.Contract.csproj",
       "msbuildProject": "../InventoryManagment.Application.Contract/InventoryManagment.Application.Contract.csproj"
     },
+    "InventoryManagment.Domain/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagment.Domain/InventoryManagment.Domain.csproj",
+      "msbuildProject": "../InventoryManagment.Domain/InventoryManagment.Domain.csproj"
+    },
     "ShopManagment.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../ShopManagment.Application.Contracts/ShopManagment.Application.Contracts.csproj",
@@ -1082,7 +1101,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "InventoryManagment.Application.Contract >= 1.0.0"
+      "InventoryManagment.Application.Contract >= 1.0.0",
+      "InventoryManagment.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1119,6 +1139,9 @@
           "projectReferences": {
             "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj": {
               "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj"
+            },
+            "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj": {
+              "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj"
             }
           }
         }

@@ -1,4 +1,5 @@
-﻿using _0_FrameWork.Infrastructure;
+﻿using _0_FrameWork.Application;
+using _0_FrameWork.Infrastructure;
 using InventoryManagment.Application.Contract.Inventory;
 using InventoryManagment.Domain.InventoryAgg;
 using ShopManagement.Infrastructure.EFCore;
@@ -33,7 +34,20 @@ namespace InventoryMangement.Infrastructure.EFCore.Repository
 
         public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
         {
-            throw new NotImplementedException();
+            var inventory = _inventoryContext.Inventory.FirstOrDefault(x => x.Id == inventoryId);
+            return inventory.inventoryOperations.Select(x => new InventoryOperationViewModel()
+            {
+                Id= x.Id,
+                Count = x.Count,
+                CurrentCount = x.CurrentCount,
+                Description = x.Description,
+                Operation = x.Operation,    
+                OperationDate=x.OperationDate.ToFarsi(),
+                Operator="مدیر سیستم",
+                OperatorId=x.OperatorId,
+                OrderId=x.OrderId,
+            }).ToList();
+
         }
 
         public List<InventoryViewModel> Search(InventorySearchModel searchModel)
@@ -42,10 +56,11 @@ namespace InventoryMangement.Infrastructure.EFCore.Repository
 
             var query = _inventoryContext.Inventory.Select(x => new InventoryViewModel()
             {
+                Id = x.Id,
                 UnitPrice = x.UnitPrice,
                 ProductId = x.ProductId,
                 InStock = x.InStock,
-                Id = x.Id,
+                CreationDate = x.CreationDate.ToFarsi(),
                 CurrentCount = x.CalculateCurrentCount()
             });
 
@@ -53,13 +68,13 @@ namespace InventoryMangement.Infrastructure.EFCore.Repository
             if (searchModel.ProductId > 0)
                 query = query.Where(x => x.ProductId == searchModel.ProductId);
 
-            if (!searchModel.InStock)
+            if (searchModel.InStock)
                 query = query.Where(x => !x.InStock);
 
             var inventory = query.OrderByDescending(x => x.Id).ToList();
 
             inventory.ForEach(item =>
-                item.Product = product.FirstOrDefault(x => x.Id == searchModel.ProductId)?.Name
+                item.Product = product.FirstOrDefault(x => x.Id == item.ProductId)?.Name
             );
 
             return inventory;

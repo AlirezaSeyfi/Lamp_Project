@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "InventoryManagment.Application/1.0.0": {
         "dependencies": {
-          "InventoryManagment.Application.Contract": "1.0.0"
+          "InventoryManagment.Application.Contract": "1.0.0",
+          "InventoryManagment.Domain": "1.0.0"
         },
         "runtime": {
           "InventoryManagment.Application.dll": {}
@@ -314,6 +315,18 @@
           }
         }
       },
+      "InventoryManagment.Domain/1.0.0": {
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "InventoryManagment.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagment.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ShopManagment.Application.Contracts/1.0.0": {
         "dependencies": {
           "0_FrameWork": "1.0.0",
@@ -523,6 +536,11 @@
       "sha512": ""
     },
     "InventoryManagment.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagment.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -18,3 +18,5 @@ D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\Inven
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\refint\InventoryManagment.Application.dll
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\InventoryManagment.Application.pdb
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\ref\InventoryManagment.Application.dll
+D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Domain.dll
+D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Domain.pdb

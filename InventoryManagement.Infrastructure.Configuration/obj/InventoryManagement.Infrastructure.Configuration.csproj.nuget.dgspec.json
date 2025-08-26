@@ -262,6 +262,9 @@
             "projectReferences": {
               "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj": {
                 "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Application.Contract\\InventoryManagment.Application.Contract.csproj"
+              },
+              "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj": {
+                "projectPath": "D:\\Project\\C#\\Lamp_Project\\InventoryManagment.Domain\\InventoryManagment.Domain.csproj"
               }
             }
           }
