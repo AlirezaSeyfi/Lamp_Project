@@ -60,9 +60,9 @@ body {
     display: none;
 }
 
-.border-solid-gray {
+/*.border-solid-gray {
     border: 1px solid #b2bec3;
-}
+}*/
 
 /* override Bootstrap Class */
 .card {

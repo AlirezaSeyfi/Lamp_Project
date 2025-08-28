@@ -2,6 +2,7 @@ D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\ne
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\InventoryMangement.Infrastructure.EFCore.dll
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\InventoryMangement.Infrastructure.EFCore.pdb
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\0_FrameWork.dll
+D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\InventoryManagment.Application.Contract.dll
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\InventoryManagment.Domain.dll
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\ShopManagement.Infrastructure.EFCore.dll
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\ShopManagment.Application.Contracts.dll
@@ -9,6 +10,7 @@ D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\ne
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\0_FrameWork.pdb
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\InventoryManagment.Domain.pdb
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\ShopManagement.Infrastructure.EFCore.pdb
+D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\InventoryManagment.Application.Contract.pdb
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\ShopManagment.Application.Contracts.pdb
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\ShopManagment.Domain.pdb
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\obj\Debug\net6.0\InventoryMangement.Infrastructure.EFCore.csproj.AssemblyReference.cache
@@ -22,5 +24,3 @@ D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\obj\Debug\ne
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\obj\Debug\net6.0\refint\InventoryMangement.Infrastructure.EFCore.dll
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\obj\Debug\net6.0\InventoryMangement.Infrastructure.EFCore.pdb
 D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\obj\Debug\net6.0\ref\InventoryMangement.Infrastructure.EFCore.dll
-D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\InventoryManagment.Application.Contract.dll
-D:\Project\C#\Lamp_Project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net6.0\InventoryManagment.Application.Contract.pdb

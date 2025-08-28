@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\Project\\C#\\Lamp_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Migrations\\20250826074530_EditTable_Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShopManagement.Infrastructure.EFCore\\Migrations\\20250826074530_EditTable_Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\pages\\shared\\components\\productcategorywithproduct\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\pages\\shared\\components\\productcategorywithproduct\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B75309CD-8FBD-4FE1-A453-75C16CAC32A6}|01_LampQuery\\01_LampQuery.csproj|d:\\project\\c#\\lamp_project\\01_lampquery\\query\\productcategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B75309CD-8FBD-4FE1-A453-75C16CAC32A6}|01_LampQuery\\01_LampQuery.csproj|solutionrelative:01_lampquery\\query\\productcategoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B75309CD-8FBD-4FE1-A453-75C16CAC32A6}|01_LampQuery\\01_LampQuery.csproj|d:\\project\\c#\\lamp_project\\01_lampquery\\contract\\product\\productquerymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B75309CD-8FBD-4FE1-A453-75C16CAC32A6}|01_LampQuery\\01_LampQuery.csproj|solutionrelative:01_lampquery\\contract\\product\\productquerymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F0944C6-5AE5-4A39-901E-7281EC349355}|DiscountManagment.Domain\\DiscountManagment.Domain.csproj|d:\\project\\c#\\lamp_project\\discountmanagment.domain\\customerdiscountagg\\customerdiscount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F0944C6-5AE5-4A39-901E-7281EC349355}|DiscountManagment.Domain\\DiscountManagment.Domain.csproj|solutionrelative:discountmanagment.domain\\customerdiscountagg\\customerdiscount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,15 +35,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250826074530_EditTable_Product.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Migrations\\20250826074530_EditTable_Product.cs",
-              "RelativeDocumentMoniker": "ShopManagement.Infrastructure.EFCore\\Migrations\\20250826074530_EditTable_Product.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ShopManagement.Infrastructure.EFCore\\Migrations\\20250826074530_EditTable_Product.cs",
-              "RelativeToolTip": "ShopManagement.Infrastructure.EFCore\\Migrations\\20250826074530_EditTable_Product.cs",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Pages\\Shared\\Components\\ProductCategoryWithProduct\\Default.cshtml",
+              "RelativeDocumentMoniker": "ServiceHost\\Pages\\Shared\\Components\\ProductCategoryWithProduct\\Default.cshtml",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Pages\\Shared\\Components\\ProductCategoryWithProduct\\Default.cshtml*",
+              "RelativeToolTip": "ServiceHost\\Pages\\Shared\\Components\\ProductCategoryWithProduct\\Default.cshtml*",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwD0AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-28T12:01:30.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductQueryModel.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\Contract\\Product\\ProductQueryModel.cs",
+              "RelativeDocumentMoniker": "01_LampQuery\\Contract\\Product\\ProductQueryModel.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\Contract\\Product\\ProductQueryModel.cs",
+              "RelativeToolTip": "01_LampQuery\\Contract\\Product\\ProductQueryModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T11:19:39.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerDiscount.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\DiscountManagment.Domain\\CustomerDiscountAgg\\CustomerDiscount.cs",
+              "RelativeDocumentMoniker": "DiscountManagment.Domain\\CustomerDiscountAgg\\CustomerDiscount.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\DiscountManagment.Domain\\CustomerDiscountAgg\\CustomerDiscount.cs",
+              "RelativeToolTip": "DiscountManagment.Domain\\CustomerDiscountAgg\\CustomerDiscount.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T07:45:31.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T11:07:50.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductCategoryQuery.cs",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\Query\\ProductCategoryQuery.cs",
+              "RelativeDocumentMoniker": "01_LampQuery\\Query\\ProductCategoryQuery.cs",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\Query\\ProductCategoryQuery.cs",
+              "RelativeToolTip": "01_LampQuery\\Query\\ProductCategoryQuery.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwEoAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T11:05:23.573Z"
             }
           ]
         }

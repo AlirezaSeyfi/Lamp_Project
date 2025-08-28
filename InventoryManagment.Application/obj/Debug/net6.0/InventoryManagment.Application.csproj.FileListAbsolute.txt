@@ -3,8 +3,10 @@ D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\Inven
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Application.pdb
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\0_FrameWork.dll
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Domain.dll
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\ShopManagment.Application.Contracts.dll
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Application.Contract.pdb
+D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Domain.pdb
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\0_FrameWork.pdb
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\ShopManagment.Application.Contracts.pdb
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\InventoryManagment.Application.csproj.AssemblyReference.cache
@@ -18,5 +20,3 @@ D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\Inven
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\refint\InventoryManagment.Application.dll
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\InventoryManagment.Application.pdb
 D:\Project\C#\Lamp_Project\InventoryManagment.Application\obj\Debug\net6.0\ref\InventoryManagment.Application.dll
-D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Domain.dll
-D:\Project\C#\Lamp_Project\InventoryManagment.Application\bin\Debug\net6.0\InventoryManagment.Domain.pdb

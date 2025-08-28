@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: "Vazir";
     src: url("../fonts/Vazir.eot");
     /* IE9 Compat Modes */
@@ -44,10 +44,6 @@ body {
     font-size: 0.8rem;
 }
 
-.fs-9 {
-    font-size: 0.7rem;
-}
-
 .fs-10 {
     font-size: 0.6rem;
 }
@@ -90,6 +86,41 @@ header form input::placeholder {
         top: 5px;
         left: 5px;
     }
+
+/* CategoryWithProduct */
+.CategoryWithProduct li button {
+    color: #636e72;
+}
+
+/* pill Tabs */
+#pills-tabContent .card-body-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#pills-tabContent .card-img-container {
+    position: relative;
+}
+
+    #pills-tabContent .card-img-container .discountPercent {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+
+#pills-tabContent .card-title {
+    margin-bottom: 5px;
+}
+
+#pills-tabContent .card-text .text-decoration-line-through {
+    opacity: 0.7;
+}
+
 
 /* Display Responsive */
 /* sm */
