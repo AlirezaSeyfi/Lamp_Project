@@ -1,0 +1,46 @@
+﻿@using _01_LampQuery.Contract.Product
+@model List<ProductQueryModel>
+@{
+}
+
+<!-- Last Product-->
+<div class="slider-Last-Product">
+
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-img-container">
+                        <img src="~/ProductPictures/@item.Picture"
+                             class="card-img-top"
+                             alt="Product image" />
+                        @if (item.DiscountRate > 0)
+                        {
+                            <span class="badge bg-danger discountPercent">@item.DiscountRate% تخفیف</span>
+                            <div class="card-body-overlay">
+                                <h5 class="dir-rtl fs-8">@item.Name</h5>
+                                <p class="card-text d-flex justify-content-between mb-2">
+                                    <span class="text-muted text-decoration-line-through dir-rtl  fs-9">@item.Price تومان</span>
+                                    <span class="fw-bold ms-2 dir-rtl  fs-9">@item.PriceWithDiscount تومان</span>
+                                </p>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="card-body-overlay">
+                                <h5 class="dir-rtl fs-8">@item.Name</h5>
+                                <p class="card-text d-flex justify-content-between mb-2">
+                                    <span class="fw-bold ms-2 dir-rtl fs-9">@item.Price تومان</span>
+                                </p>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>

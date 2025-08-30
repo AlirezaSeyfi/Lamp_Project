@@ -121,6 +121,105 @@ header form input::placeholder {
     opacity: 0.7;
 }
 
+/* Slider Product */
+.slider-Last-Product {
+    width: 80%;
+    margin: 50px auto;
+}
+
+    .slider-Last-Product img {
+        width: 100%;
+        height: auto;
+    }
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+/* استایل دکمه‌های قبلی و بعدی */
+.slick-prev,
+.slick-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    /* رنگ آبی برای پس‌زمینه */
+    border-radius: 50%;
+    color: white;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+    border: none;
+    /* حذف حاشیه پیش‌فرض */
+    outline: none;
+    /* حذف حاشیه فوکوس */
+}
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 20px;
+        color: white;
+        /* رنگ آیکون فلش */
+    }
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}
+
+    .slick-prev:hover,
+    .slick-next:hover {
+        background: #0056b3;
+        /* رنگ آبی تیره‌تر برای هاور */
+    }
+
+    .slick-prev:active,
+    .slick-next:active {
+        background: #007bff;
+        /* حفظ رنگ آبی در حالت کلیک */
+        outline: none;
+        /* حذف حاشیه کلیک */
+    }
+
+    .slick-prev:focus,
+    .slick-next:focus {
+        background: #007bff;
+        /* حفظ رنگ آبی در حالت کلیک */
+        outline: none;
+        /* حذف حاشیه فوکوس */
+    }
+
+
+.slider-Last-Product .card-body-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.slider-Last-Product .card-img-container {
+    position: relative;
+}
+
+    .slider-Last-Product .card-img-container .discountPercent {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+
+.slider-Last-Product .card-title {
+    margin-bottom: 5px;
+}
+
+.slider-Last-Product .card-text .text-decoration-line-through {
+    opacity: 0.7;
+}
 
 /* Display Responsive */
 /* sm */
