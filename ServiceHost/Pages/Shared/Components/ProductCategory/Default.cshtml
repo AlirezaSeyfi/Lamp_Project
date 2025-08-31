@@ -4,24 +4,26 @@
 }
 
 <!-- Category -->
-<div class="Category my-2">
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2">
+<div class="container">
+    <div class="Category my-2 dir-rtl">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2">
 
-        @foreach (var item in Model)
-        {
+            @foreach (var item in Model)
+            {
 
-            <div class="col">
-                <div class="item">
-                    <a href="#" class="text-decoration-none">
-                        <img src="~/ProductPictures/@item.Picture"
-                             class="img-fluid w-100" alt="@item.PictureAlt" class="img-fluid w-100" title="@item.PictureTitle" />
-                        <div class="caption">
-                            <h6 class="bg-white p-1 rounded fs-9 text-secondary">@item.Name</h6>
-                        </div>
-                    </a>
+                <div class="col">
+                    <div class="item">
+                        <a asp-page="CategoryWithProduct" asp-route-id="@item.Slug" class="text-decoration-none">
+                            <img src="~/ProductPictures/@item.Picture"
+                                 class="img-fluid w-100" alt="@item.PictureAlt" class="img-fluid w-100" title="@item.PictureTitle" />
+                            <div class="caption">
+                                <h6 class="bg-white p-1 rounded fs-9 text-secondary">@item.Name</h6>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        }
+            }
 
+        </div>
     </div>
 </div>

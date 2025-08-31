@@ -25,55 +25,57 @@
 </ul>
 
 <!-- Product -->
-<div class="tab-content" id="pills-tabContent">
+<div class="container">
+    <div class="tab-content" id="pills-tabContent">
 
-    @foreach (var category in Model)
-    {
-        <div class="tab-pane fade"
-             id='@category.Slug.FaToEnSlug()'
-             role="tabpanel">
+        @foreach (var category in Model)
+        {
+            <div class="tab-pane fade"
+                 id='@category.Slug.FaToEnSlug()'
+                 role="tabpanel">
 
-            <div class="row justify-content-center">
+                <div class="row justify-content-center">
 
-                @foreach (var product in category.Products)
-                {
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <div class="card-img-container">
-                                <img src="~/ProductPictures/@product.Picture"
-                                     class="card-img-top"
-                                     alt="Product image" />
-                                @if (product.DiscountRate > 0)
-                                {
-                                    <span class="badge bg-danger discountPercent">@product.DiscountRate% تخفیف</span>
-                                    <div class="card-body-overlay">
-                                        <h5 class="dir-rtl">@product.Name</h5>
-                                        <p class="card-text d-flex justify-content-between mb-2">
-                                            <span class="text-muted text-decoration-line-through dir-rtl">@product.Price تومان</span>
-                                            <span class="fw-bold ms-2 dir-rtl">@product.PriceWithDiscount تومان</span>
-                                        </p>
-                                    </div>
-                                }
-                                else
-                                {
-                                    <div class="card-body-overlay">
-                                        <h5 class="dir-rtl">@product.Name</h5>
-                                        <p class="card-text d-flex justify-content-between mb-2">
-                                            <span class="fw-bold ms-2 dir-rtl">@product.Price تومان</span>
-                                        </p>
-                                    </div>
-                                }
+                    @foreach (var product in category.Products)
+                    {
+                        <div class="col-md-4">
+                            <div class="card shadow-sm">
+                                <div class="card-img-container">
+                                    <img src="~/ProductPictures/@product.Picture"
+                                         class="card-img-top"
+                                         alt="Product image" />
+                                    @if (product.DiscountRate > 0)
+                                    {
+                                        <span class="badge bg-danger discountPercent">@product.DiscountRate% تخفیف</span>
+                                        <div class="card-body-overlay">
+                                            <h5 class="dir-rtl">@product.Name</h5>
+                                            <p class="card-text d-flex justify-content-between mb-2">
+                                                <span class="text-muted text-decoration-line-through dir-rtl">@product.Price تومان</span>
+                                                <span class="fw-bold ms-2 dir-rtl">@product.PriceWithDiscount تومان</span>
+                                            </p>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="card-body-overlay">
+                                            <h5 class="dir-rtl">@product.Name</h5>
+                                            <p class="card-text d-flex justify-content-between mb-2">
+                                                <span class="fw-bold ms-2 dir-rtl">@product.Price تومان</span>
+                                            </p>
+                                        </div>
+                                    }
+                                </div>
                             </div>
                         </div>
-                    </div>
-                }
+                    }
+
+                </div>
 
             </div>
 
-        </div>
+        }
 
-    }
-
+    </div>
 </div>
 <script>
     document.querySelector("#pills-tab li:first-child button").classList.add("active");

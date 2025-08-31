@@ -221,6 +221,12 @@ header form input::placeholder {
     opacity: 0.7;
 }
 
+/* Products */
+.countdownDiscount {
+    background-color: #d63031;
+    color: #dfe6e9;
+}
+
 /* Display Responsive */
 /* sm */
 @media (max-width: 576px) {

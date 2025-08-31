@@ -1,0 +1,75 @@
+﻿@page
+@model ServiceHost.Pages.CategoryWithProductModel
+@{
+    ViewData["Title"] = Model.Category.Name;
+}
+
+<div class="container my-4 dir-rtl">
+    <div class="row g-4">
+
+        @foreach (var item in Model.Category.Products)
+        {
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="position-relative">
+                        @if (item.DiscountRate > 0)
+                        {
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">@item.DiscountRate%</span>
+                        }
+                        <a href="single-product.html">
+                            <img src="~/ProductPictures/@item.Picture"
+                                 class="card-img-top"
+                                 alt="Product" />
+                            @if (item.DiscountRate > 0)
+                            {
+                                <div class="position-absolute start-0 end-0 bottom-0 text-center">
+                                    <span class="countdownDiscount px-2 rounded rounded-bottom-0" data-expire="@item.DiscountExpireDate"></span>
+                                </div>
+                            }
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-2">
+                            <a href="single-product.html"
+                               class="text-decoration-none text-dark">
+                                @item.Name
+                            </a>
+                        </h5>
+                        
+                        <p class="my-3">
+                            @if (item.DiscountRate > 0)
+                            {
+                                <span class="fw-bold text-success dir-rtl">@item.PriceWithDiscount تومان</span>
+                                <span class="text-muted text-decoration-line-through dir-rtl">@item.Price تومان</span>
+                            }
+                            else
+                            {
+                                <span class="fw-bold text-success dir-rtl">@item.Price تومان</span>
+                            }
+
+                        </p>
+                        <div class="mt-1 d-flex justify-content-between">
+                            <button class="btn btn-sm btn-outline-primary">
+                                <i class="bi bi-bag"></i> اضافه کردن به سبد خرید
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#quickView">
+                                <i class="bi bi-eye"></i> View
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="mt-4 text-center">
+        <a href="#" class="btn btn-outline-secondary btn-sm ms-2">▶</a>
+        <a href="#" class="btn btn-outline-primary btn-sm active">1</a>
+        <a href="#" class="btn btn-outline-primary btn-sm">2</a>
+        <a href="#" class="btn btn-outline-secondary btn-sm me-2">◀</a>
+    </div>
+</div>

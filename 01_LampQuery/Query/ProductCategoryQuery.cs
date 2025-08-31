@@ -57,8 +57,10 @@ namespace _01_LampQuery.Query
                         Id = x.Id,
                         Name = x.Name,
                         Products = MapProducts(x.Products),
-                        Slug = x.Slug
-
+                        Slug = x.Slug,
+                        Description = x.Description,
+                        KeyWord = x.KeyWord,
+                        MetaDescription = x.MetaDescription,
                     }).ToList();
 
             foreach (var category in categories)
@@ -89,8 +91,51 @@ namespace _01_LampQuery.Query
                 Picture = p.Picture,
                 PictureAlt = p.PictureAlt,
                 PictureTitle = p.PictureTitle,
-                Slug = p.Slug
+                Slug = p.Slug,
             }).ToList();
+        }
+
+        public ProductCategoryQueryModel GetProductCategoryWithProductBySlug(string slug)
+        {
+            var inventoryDict = _inventoryContext.Inventory
+                                .Select(x => new { x.ProductId, x.UnitPrice })
+                                 .ToDictionary(x => x.ProductId, x => x.UnitPrice);
+
+            var discountsDict = _discountContext.customerDiscounts
+                                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
+                                 .Select(x => new { x.ProductId, x.DiscountRange, x.EndDate })
+                                 .ToDictionary(x => x.ProductId, x => new { x.DiscountRange, x.EndDate });
+
+            var category = _shopContext.ProductCategories
+                .Include(x => x.Products)
+                .ThenInclude(x => x.Category)
+                    .Select(x => new ProductCategoryQueryModel()
+                    {
+                        Id = x.Id,
+                        Name = x.Name,
+                        Products = MapProducts(x.Products),
+                        Slug = x.Slug
+
+                    }).FirstOrDefault(x => x.Slug == slug);
+
+            foreach (var product in category.Products)
+            {
+                inventoryDict.TryGetValue(product.Id, out var price);
+                product.Price = price.ToMoney();
+
+
+                if (discountsDict.TryGetValue(product.Id, out var discountInfo))
+                {
+                    product.DiscountRate = discountInfo.DiscountRange;
+                    product.DiscountExpireDate = discountInfo.EndDate.ToDiscountFormat();
+
+                    var discountAmount = Math.Round((price * discountInfo.DiscountRange) / 100);
+                    product.PriceWithDiscount = (price - discountAmount).ToMoney();
+                }
+                
+            }
+
+            return category;
         }
     }
 }
