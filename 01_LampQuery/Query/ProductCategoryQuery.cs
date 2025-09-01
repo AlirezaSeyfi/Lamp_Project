@@ -46,8 +46,10 @@ namespace _01_LampQuery.Query
 
             var discountsDict = _discountContext.customerDiscounts
                                  .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
-                                 .Select(x => new { x.ProductId, x.DiscountRange })
+                                 .GroupBy(x => x.ProductId)
+                                 .Select(g => g.First()) // فقط اولین تخفیف هر محصول
                                  .ToDictionary(x => x.ProductId, x => x.DiscountRange);
+
 
             var categories = _shopContext.ProductCategories
                 .Include(x => x.Products)
@@ -102,9 +104,11 @@ namespace _01_LampQuery.Query
                                  .ToDictionary(x => x.ProductId, x => x.UnitPrice);
 
             var discountsDict = _discountContext.customerDiscounts
-                                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
-                                 .Select(x => new { x.ProductId, x.DiscountRange, x.EndDate })
-                                 .ToDictionary(x => x.ProductId, x => new { x.DiscountRange, x.EndDate });
+                .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
+                .GroupBy(x => x.ProductId)
+                .Select(g => g.First())
+                .ToDictionary(x => x.ProductId, x => x); // کل آبجکت تخفیف ذخیره میشه
+
 
             var category = _shopContext.ProductCategories
                 .Include(x => x.Products)
@@ -132,7 +136,7 @@ namespace _01_LampQuery.Query
                     var discountAmount = Math.Round((price * discountInfo.DiscountRange) / 100);
                     product.PriceWithDiscount = (price - discountAmount).ToMoney();
                 }
-                
+
             }
 
             return category;

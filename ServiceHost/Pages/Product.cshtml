@@ -1,0 +1,69 @@
+﻿@page "{slug}"
+@model ServiceHost.Pages.ProductModel
+@{
+}
+
+<div class="container py-5 dir-rtl">
+    <div class="row g-4">
+        <!-- تصویر محصول -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <img src="~/ProductPictures/@Model.Product.Picture"
+                     class="card-img-top rounded-3"
+                     alt="محصول" />
+            </div>
+        </div>
+
+        <!-- جزئیات محصول -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm p-4">
+                <h2 class="fw-bold mb-3">@Model.Product.Name</h2>
+                <p class="text-muted">
+                    دسته‌بندی: <span class="fw-semibold">@Model.Product.Category</span>
+                </p>
+
+                <div class="d-flex align-items-center mb-3">
+                    @if (Model.Product.DiscountRate > 0)
+                    {
+                        <span class="fs-4 fw-bold text-primary dir-rtl">@Model.Product.PriceWithDiscount تومان</span>
+                        <span class="text-decoration-line-through text-muted ms-3 dir-rtl">@Model.Product.Price تومان</span>
+                        <span class="badge bg-success ms-3">@Model.Product.DiscountRate% تخفیف</span>
+                    }
+                    else
+                    {
+                        <span class="fw-bold text-success dir-rtl">@Model.Product.Price تومان</span>
+                    }
+                </div>
+
+                <p class="text-secondary small">
+                    @Model.Product.ShortDescription
+                </p>
+
+                <!-- انتخاب تعداد -->
+                <div class="d-flex align-items-center mb-4">
+                    <label for="quantity" class="me-2 fw-semibold">تعداد:</label>
+                    <input type="number"
+                           id="quantity"
+                           class="form-control w-25 text-center"
+                           value="1"
+                           min="1" />
+                </div>
+
+                <!-- دکمه خرید -->
+                <button class="btn btn-primary btn-lg w-100 rounded-pill">
+                    <i class="bi bi-cart-plus me-2"></i> افزودن به سبد خرید
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- توضیحات بیشتر -->
+    <div class="card border-0 mt-5 p-4">
+        <h4 class="fw-bold mb-3">توضیحات محصول</h4>
+        <p class="text-muted">
+            این محصول با طراحی مدرن و کیفیت عالی تولید شده است. در ساخت آن از
+            بهترین مواد اولیه استفاده شده و دوام و زیبایی آن تضمین شده است. برای
+            خریدی مطمئن، همین حالا آن را به سبد خرید خود اضافه کنید.
+        </p>
+    </div>
+</div>

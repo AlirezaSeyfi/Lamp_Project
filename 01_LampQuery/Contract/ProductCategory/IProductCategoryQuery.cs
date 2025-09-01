@@ -1,6 +1,4 @@
-﻿using _01_LampQuery.Contract.Product;
-
-namespace _01_LampQuery.Contract.ProductCategory
+﻿namespace _01_LampQuery.Contract.ProductCategory
 {
     public interface IProductCategoryQuery
     {

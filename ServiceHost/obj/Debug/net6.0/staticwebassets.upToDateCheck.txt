@@ -11,6 +11,10 @@ wwwroot\Admin_temp\images\5.jpg
 wwwroot\Admin_temp\images\7.jpg
 wwwroot\Admin_temp\js\alpine.js
 wwwroot\Admin_temp\js\chart.js
+wwwroot\Admin_temp\js\jquery.validate.js
+wwwroot\Admin_temp\js\jquery.validate.min.js
+wwwroot\Admin_temp\js\jquery.validate.unobtrusive.js
+wwwroot\Admin_temp\js\jquery.validate.unobtrusive.min.js
 wwwroot\Admin_temp\js\persian-date.min.js
 wwwroot\Admin_temp\js\persian-datepicker.min.js
 wwwroot\Admin_temp\js\purecounter_vanilla.js

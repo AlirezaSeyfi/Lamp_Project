@@ -10,97 +10,14 @@
 
 <body>
 
-    <!-- Header -->
-    <header class="p-3 mb-3 border-bottom dir-rtl">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <i class="bi bi-apple text-danger fs-1"></i>
-
-                <ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a asp-area="Admin" asp-page="Shop/Product/Index" class="nav-link px-2 link-secondary">خانه</a></li>
-                    <li><a href="#" class="nav-link px-2 link-secondary">محصولات</a></li>
-                    <li><a href="#" class="nav-link px-2 link-secondary">تماس باما</a></li>
-                    <li><a href="#" class="nav-link px-2 link-secondary">گزارش مشکل</a></li>
-                </ul>
-
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 ms-lg-3">
-                    <input type="search" class="form-control" placeholder="جستجو..." aria-label="Search">
-                </form>
-
-                <div class="dropdown text-end">
-                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32"
-                             class="rounded-circle">
-                    </a>
-                    <ul class="dropdown-menu text-end fs-8 mt-2" aria-labelledby="dropdownUser1" style="">
-                        <li><a class="dropdown-item" href="#">علیرضا</a></li>
-                        <li><a class="dropdown-item" href="#">تنظمیات</a></li>
-                        <li><a class="dropdown-item" href="#">پروفایل</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">خروج</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    @await Component.InvokeAsync("Menu")
 
     @* Main *@
     <div>
         @RenderBody()
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start border-top mt-5 dir-rtl">
-        <div class="container py-4">
-            <div class="row">
-                <!-- ستون اول -->
-                <div class="col-md-4 mb-3">
-                    <h6 class="fw-bold mb-3">درباره ما</h6>
-                    <p class="text-muted small">
-                        فروشگاه ما بهترین محصولات دکوراسیون و مبلمان را با قیمت مناسب
-                        ارائه می‌دهد.
-                    </p>
-                </div>
-                <!-- ستون دوم -->
-                <div class="col-md-4 mb-3">
-                    <h6 class="fw-bold mb-3">لینک‌های سریع</h6>
-                    <ul class="list-unstyled small">
-                        <li>
-                            <a href="#" class="text-decoration-none text-muted">خانه</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-decoration-none text-muted">محصولات</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-decoration-none text-muted">تماس با ما</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-decoration-none text-muted">درباره ما</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- ستون سوم -->
-                <div class="col-md-4 mb-3">
-                    <h6 class="fw-bold mb-3">ما را دنبال کنید</h6>
-                    <a href="#" class="text-muted me-2">
-                        <i class="bi bi-facebook fs-5"></i>
-                    </a>
-                    <a href="#" class="text-muted me-2">
-                        <i class="bi bi-instagram fs-5"></i>
-                    </a>
-                    <a href="#" class="text-muted me-2">
-                        <i class="bi bi-twitter fs-5"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="bg-dark text-white text-center py-2 small">
-            © 2025 تمامی حقوق محفوظ است | طراحی با Bootstrap 5
-        </div>
-    </footer>
+    @await Component.InvokeAsync("Footer")
 
     <partial name="_JsFiles" />
     @await RenderSectionAsync("Scripts", required: false)
