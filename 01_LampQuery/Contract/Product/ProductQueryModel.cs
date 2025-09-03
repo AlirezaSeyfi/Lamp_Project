@@ -1,4 +1,6 @@
-﻿namespace _01_LampQuery.Contract.Product
+﻿using System.Collections.Generic;
+
+namespace _01_LampQuery.Contract.Product
 {
     public class ProductQueryModel
     {
@@ -14,5 +16,6 @@
         public string Category { get; set; }
         public string Slug { get; set; }
         public string DiscountExpireDate { get; set; }
+        public List<ProductPictureQueryModel> Pictures{ get; set; }
     }
 }

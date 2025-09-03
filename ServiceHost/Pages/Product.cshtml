@@ -1,16 +1,51 @@
 ﻿@page "{slug}"
 @model ServiceHost.Pages.ProductModel
 @{
+    ViewData["Title"] = Model.Product.Name;
 }
 
 <div class="container py-5 dir-rtl">
     <div class="row g-4">
-        <!-- تصویر محصول -->
+
+
+        <!-- Slider -->
         <div class="col-md-6">
-            <div class="card shadow-sm border-0">
-                <img src="~/ProductPictures/@Model.Product.Picture"
-                     class="card-img-top rounded-3"
-                     alt="محصول" />
+            <div id="productCarousel" class="carousel slide shadow-sm rounded-3" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @for (int i = 0; i < Model.Product.Pictures.Count; i++)
+                    {
+                        var picture = Model.Product.Pictures[i];
+                        <div class="carousel-item @(i == 0 ? "active" : "")">
+                            <img src="~/ProductPictures/@picture.Picture"
+                                 class="d-block w-100 rounded-3"
+                                 alt="@picture.PictureAlt"
+                                 title="@picture.PictureTitle" />
+                        </div>
+                    }
+
+                </div>
+
+                <!-- دکمه‌های قبلی/بعدی -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">قبلی</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">بعدی</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    @for (int i = 0; i < Model.Product.Pictures.Count; i++)
+                    {
+                        <button type="button"
+                                data-bs-target="#productCarousel"
+                                data-bs-slide-to="@i"
+                                class="@(i == 0 ? "active" : "")">
+                        </button>
+                    }
+                </div>
+
             </div>
         </div>
 

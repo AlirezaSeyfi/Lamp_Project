@@ -4,6 +4,7 @@ using DiscountManagement.Infrastructure.EFCore;
 using InventoryMangement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore;
+using ShopManagment.Domain.ProductPictureAgg;
 
 namespace _01_LampQuery.Query
 {
@@ -34,6 +35,7 @@ namespace _01_LampQuery.Query
 
             var product = _shopContext.Products
                 .Include(x => x.Category)
+                .Include(x => x.ProductPictures)
                     .Select(x => new ProductQueryModel()
                     {
                         Id = x.Id,
@@ -44,6 +46,7 @@ namespace _01_LampQuery.Query
                         PictureTitle = x.PictureTitle,
                         ShortDescription = x.ShortDescription,
                         Slug = x.Slug,
+                        Pictures = MapProductPicture(x.ProductPictures)
                     }).FirstOrDefault(x => x.Slug == slug);
 
             inventoryDict.TryGetValue(product.Id, out var price);
@@ -58,6 +61,19 @@ namespace _01_LampQuery.Query
             }
 
             return product;
+        }
+
+        private static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> productPictures)
+        {
+            return productPictures.Select(x => new ProductPictureQueryModel
+            {
+                ProductId = x.ProductId,
+                IsRemoved = x.IsRemoved,
+                Picture = x.Picture,
+                PictureAlt = x.PictureAlt,
+                PictureTitle = x.PictureTitle,
+                ProductName = x.ProductName
+            }).Where(x => !x.IsRemoved).ToList();
         }
 
         public List<ProductQueryModel> GetLatestArrivals()

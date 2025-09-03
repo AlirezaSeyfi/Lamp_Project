@@ -99,6 +99,7 @@ wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\ماد
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-45-56-4.jpg
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-49-55-Copilot_20250819_185838.png
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مانیتور-سامسونگ\2025-08-20-19-36-17-4.jpg
+wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مانیتور-سامسونگ\2025-09-03-08-21-20-1.jpg
 wwwroot\ProductPictures\Slides\2025-08-20-20-09-59-Copilot_20250819_185838 (1).png
 wwwroot\ProductPictures\Slides\2025-08-20-20-12-50-1.jpg
 wwwroot\ProductPictures\Slides\2025-08-20-20-15-57-4.jpg

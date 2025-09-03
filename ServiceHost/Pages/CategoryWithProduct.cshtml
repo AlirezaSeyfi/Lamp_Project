@@ -52,11 +52,9 @@
                             <button class="btn btn-sm btn-outline-primary">
                                 <i class="bi bi-bag"></i> اضافه کردن به سبد خرید
                             </button>
-                            <button class="btn btn-sm btn-outline-secondary"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#quickView">
-                                <i class="bi bi-eye"></i> View
-                            </button>
+                            <a class="btn btn-sm btn-outline-secondary" asp-page="Product" asp-route-slug="@item.Slug">
+                                <i class="bi bi-eye"></i> نمایش
+                            </a>
                         </div>
                     </div>
                 </div>
