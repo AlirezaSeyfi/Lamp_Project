@@ -9,6 +9,7 @@
       "ServiceHost/1.0.0": {
         "dependencies": {
           "01_LampQuery": "1.0.0",
+          "BlogManagement.Configuration": "1.0.0",
           "DiscountManagement.Configuration": "1.0.0",
           "InventoryManagement.Infrastructure.Configuration": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.36",
@@ -2922,6 +2923,68 @@
           }
         }
       },
+      "BlogManagement.Configuration/1.0.0": {
+        "dependencies": {
+          "BlogManagement.Infrastructure.EFCore": "1.0.0",
+          "BlogManagment.Application": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "BlogManagement.Configuration.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BlogManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "BlogManagment.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.36",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36"
+        },
+        "runtime": {
+          "BlogManagement.Infrastructure.EFCore.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BlogManagment.Application/1.0.0": {
+        "dependencies": {
+          "BlogManagment.Application.Contract": "1.0.0",
+          "BlogManagment.Domain": "1.0.0"
+        },
+        "runtime": {
+          "BlogManagment.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BlogManagment.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "2.3.0"
+        },
+        "runtime": {
+          "BlogManagment.Application.Contract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BlogManagment.Domain/1.0.0": {
+        "dependencies": {
+          "0_FrameWork": "1.0.0",
+          "BlogManagment.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "BlogManagment.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "DiscountManagement.Configuration/1.0.0": {
         "dependencies": {
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
@@ -4903,6 +4966,31 @@
       "sha512": ""
     },
     "0_FrameWork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagement.Configuration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagment.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagment.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagment.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

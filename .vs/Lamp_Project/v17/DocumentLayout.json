@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Project\\C#\\Lamp_Project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\pages\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\pages\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B75309CD-8FBD-4FE1-A453-75C16CAC32A6}|01_LampQuery\\01_LampQuery.csproj|d:\\project\\c#\\lamp_project\\01_lampquery\\query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B75309CD-8FBD-4FE1-A453-75C16CAC32A6}|01_LampQuery\\01_LampQuery.csproj|solutionrelative:01_lampquery\\query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductQuery.cs",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\Query\\ProductQuery.cs",
-              "RelativeDocumentMoniker": "01_LampQuery\\Query\\ProductQuery.cs",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\01_LampQuery\\Query\\ProductQuery.cs",
-              "RelativeToolTip": "01_LampQuery\\Query\\ProductQuery.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAAEEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T04:48:49.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Product.cshtml",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Pages\\Product.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Pages\\Product.cshtml",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Pages\\Product.cshtml",
-              "RelativeToolTip": "ServiceHost\\Pages\\Product.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-03T04:46:26.979Z",
-              "EditorCaption": ""
             }
           ]
         }

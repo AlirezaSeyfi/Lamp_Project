@@ -92,6 +92,7 @@ wwwroot\ProductPictures\Product\محافظ-برق\2025-08-27-14-32-01-5.jpg
 wwwroot\ProductPictures\ProductCategory\محصولات-برقی\2025-08-20-16-10-29-S (1).jpg
 wwwroot\ProductPictures\ProductCategory\محصولات-خوراکی\2025-08-22-11-21-39-7.jpg
 wwwroot\ProductPictures\ProductCategory\محصولات-کامپیوتری\2025-08-20-16-10-57-Copilot_20250819_185838 (1).png
+wwwroot\ProductPictures\ProductCategory\مقاله-روزنامه\2025-09-09-14-18-44-Copilot_20250819_185838.png
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-05-24-5.jpg
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-16-48-4.jpg
 wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مادربرد-ایسوس-گیمینگ\2025-08-20-19-34-33-Copilot_20250819_185838 (1).png
@@ -103,3 +104,5 @@ wwwroot\ProductPictures\ProductPictures\محصولات-کامپیوتری\مان
 wwwroot\ProductPictures\Slides\2025-08-20-20-09-59-Copilot_20250819_185838 (1).png
 wwwroot\ProductPictures\Slides\2025-08-20-20-12-50-1.jpg
 wwwroot\ProductPictures\Slides\2025-08-20-20-15-57-4.jpg
+wwwroot\ProductPictures\روزنامه-برقی\2025-09-09-14-21-19-photo_2025-09-08_09-49-21.jpg
+wwwroot\ProductPictures\روزنامه-برقی\2025-09-09-14-32-14-4.2 end.png

@@ -316,3 +316,13 @@ D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.pdb
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.genruntimeconfig.cache
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ref\ServiceHost.dll
 D:\Project\C#\Lamp_Project\ServiceHost\obj\Debug\net6.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagement.Configuration.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagement.Infrastructure.EFCore.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagment.Application.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagment.Domain.dll
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagement.Configuration.pdb
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagement.Infrastructure.EFCore.pdb
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagment.Application.pdb
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagment.Application.Contract.pdb
+D:\Project\C#\Lamp_Project\ServiceHost\bin\Debug\net6.0\BlogManagment.Domain.pdb

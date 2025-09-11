@@ -1,0 +1,16 @@
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\bin\Debug\net6.0\BlogManagment.Application.Contract.deps.json
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\bin\Debug\net6.0\BlogManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\bin\Debug\net6.0\BlogManagment.Application.Contract.pdb
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\bin\Debug\net6.0\0_FrameWork.dll
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\bin\Debug\net6.0\0_FrameWork.pdb
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogManagment.Application.Contract.csproj.AssemblyReference.cache
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogManagment.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogManagment.Application.Contract.AssemblyInfoInputs.cache
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogManagment.Application.Contract.AssemblyInfo.cs
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogManagment.Application.Contract.csproj.CoreCompileInputs.cache
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogManagment.Application.Contract.sourcelink.json
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogMana.F95A562C.Up2Date
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\refint\BlogManagment.Application.Contract.dll
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\BlogManagment.Application.Contract.pdb
+D:\Project\C#\Lamp_Project\BlogManagment.Application.Contract\obj\Debug\net6.0\ref\BlogManagment.Application.Contract.dll
