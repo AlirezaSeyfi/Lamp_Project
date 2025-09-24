@@ -14,6 +14,16 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
             _blogContext = blogContext;
         }
 
+        public List<ArticleCategoryViewModel> GetArticleCategories()
+        {
+           return _blogContext.ArticleCategories
+                               .Select(x=>new ArticleCategoryViewModel 
+                               {
+                                   Id = x.Id,
+                                   Name = x.Name,
+                               }).ToList();
+        }
+
         public EditArticleCategory GetDetails(long id)
         {
             return _blogContext.ArticleCategories.Select(x => new EditArticleCategory
@@ -31,6 +41,13 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
             }).FirstOrDefault(x => x.Id == id);
         }
 
+        public string GetSlugBy(long id)
+        {
+            return _blogContext.ArticleCategories
+                .Select(x => new { x.Id, x.Slug })
+                .FirstOrDefault(x => x.Id == id).Slug;
+        }
+
         public List<ArticleCategoryViewModel> Search(ArticleCategorySearchModel searchModel)
         {
             var query = _blogContext.ArticleCategories.Select(x => new ArticleCategoryViewModel
@@ -40,7 +57,7 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
                 Name = x.Name,
                 Picture = x.Picture,
                 ShowOrder = x.ShowOrder,
-                CreationDate=x.CreationDate.ToFarsi()
+                CreationDate = x.CreationDate.ToFarsi()
             });
 
             if (!string.IsNullOrEmpty(searchModel.Name))

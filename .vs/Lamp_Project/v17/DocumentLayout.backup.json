@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Project\\C#\\Lamp_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\blog\\articlecategories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\blog\\articlecategories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|d:\\project\\c#\\lamp_project\\servicehost\\areas\\admin\\pages\\blog\\articles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A55673C-21C9-4DBF-AFA6-A72FDAF06BD3}|ServiceHost\\ServiceHost.csproj|solutionrelative:servicehost\\areas\\admin\\pages\\blog\\articles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,13 +24,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Blog\\ArticleCategories\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Blog\\ArticleCategories\\Edit.cshtml",
-              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Blog\\ArticleCategories\\Edit.cshtml",
-              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Blog\\ArticleCategories\\Edit.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAxAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Blog\\Articles\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ServiceHost\\Areas\\Admin\\Pages\\Blog\\Articles\\Edit.cshtml",
+              "ToolTip": "D:\\Project\\C#\\Lamp_Project\\ServiceHost\\Areas\\Admin\\Pages\\Blog\\Articles\\Edit.cshtml*",
+              "RelativeToolTip": "ServiceHost\\Areas\\Admin\\Pages\\Blog\\Articles\\Edit.cshtml*",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-11T10:45:31.096Z",
+              "WhenOpened": "2025-09-24T11:22:56.398Z",
               "EditorCaption": ""
             }
           ]

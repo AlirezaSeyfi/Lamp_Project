@@ -1,0 +1,149 @@
+﻿@page
+@model ServiceHost.Areas.Admin.Pages.Blog.Articles.IndexModel
+@{
+    ViewData["Title"] = "مدیریت مقالات";
+}
+
+<div class="col-12">
+    <div class="card">
+
+        <div class="card-header text-start d-flex justify-content-between">
+            <button type="button" class="btn btn-primary fs-8" data-bs-toggle="modal"
+                    data-bs-target="#filter">
+                فیلتر
+                <i class="bi bi-funnel-fill"></i>
+            </button>
+
+            <a class="btn btn-primary fs-8" asp-page="./Create">
+                ایجاد مقاله جدید
+                <i class="bi bi-plus"></i>
+            </a>
+
+
+        </div>
+
+        <div class="card-body">
+            <!-- Table -->
+            <div class="table-responsive border border-1 rounded p-2">
+                <table class="table product table-rounded m-0 align-middle" id="PTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">عکس</th>
+                            <th scope="col">عنوان</th>
+                            <th scope="col">گروه</th>
+                            <th scope="col">توضیحات کوتاه</th>
+                            <th scope="col">تاریخ انتشار</th>
+                            <th scope="col">عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.Articles)
+                        {
+                            <tr>
+                                <th scope="row">@item.Id</th>
+                                <td><img src="~/ProductPictures/@item.Picture" alt="" class="" width="50"></td>
+                                <td>@item.Title</td>
+                                <td>@item.Category</td>
+                                <td>@item.ShortDescription</td>
+                                <td>@item.PublishDate</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                            عملیات
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">نمایش</a></li>
+                                            <li>
+                                                <a class="dropdown-item" asp-page="./Edit" asp-route-id="@item.Id">ویرایش</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- pagination -->
+            <div class="d-flex justify-content-center mt-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination my-2">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item ">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Filter -->
+<div class="modal fade z-index-Higher" id="filter" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <form action="" method="get">
+                <div class="modal-header justify-content-between">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">فیلتر محصول</h1>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label" asp-for="SearchModel.Title">
+                            موضوع
+                            مقاله
+                        </label>
+                        <input type="text" class="form-control" asp-for="SearchModel.Title"
+                               aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fs-8" asp-for="SearchModel.CategoryId">دسته بندی</label>
+                        <select class="form-select fs-8 NoValidate" aria-label="Default select example" asp-for="SearchModel.CategoryId" asp-items="Model.ArticleCategories">
+                            <option value="0" selected>گروه محصولی ...</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">کنسل</button>
+                    <button type="submit" class="btn btn-primary">فیلتر کردن</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Create -->
+<div id="modalContainer"></div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="~/js/DisableAutoFocus.js"></script>
+    <script src="~/Admin_temp/js/site.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+}
+
+

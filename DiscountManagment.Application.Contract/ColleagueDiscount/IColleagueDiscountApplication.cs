@@ -1,5 +1,4 @@
 ﻿using _0_FrameWork.Application;
-using Microsoft.AspNetCore.JsonPatch.Operations;
 
 namespace DiscountManagment.Application.Contract.ColleagueDiscount
 {
